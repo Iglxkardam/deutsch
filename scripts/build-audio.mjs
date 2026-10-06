@@ -77,6 +77,13 @@ for (const day of DAYS) {
   for (const b of day.notes) {
     if (b.t === 'ex') for (const i of b.items) add(i.de.split('(')[0].trim())
     if (b.t === 'table' && b.say) for (const t of b.say) add(t)
+    // visual blocks of the rich layout also speak
+    if (b.t === 'timeline') for (const s of b.steps) add(s.de)
+    if (b.t === 'preps') for (const i of b.items) add(i.de)
+    if (b.t === 'clock') {
+      if (b.mode === 'formal') for (const i of b.items) add(i.de)
+      else for (const t of b.say) add(t)
+    }
   }
   for (const e of day.exercises) {
     if (e.k === 'listen') add(e.text)

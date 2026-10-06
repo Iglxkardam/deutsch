@@ -1,4 +1,5 @@
 import type { Day } from '@/types'
+import { ALL_INFORMAL_TIMES } from '@/lib/uhrzeit'
 
 export const d12: Day = {
   id: 12,
@@ -8,51 +9,64 @@ export const d12: Day = {
   focus: 'Tagesablauf · formelle Uhrzeit (24h) · informelle Uhrzeit (halb, vor, nach, Viertel) · um, am, im, von…bis',
   minutes: 60,
   examSkill: 'Hören',
+  look: 'rich',
+  hero: 'd12-hero',
   notes: [
     { t: 'h', text: '1 · Kapitel 5: Alltag und Familie — Khans Tag' },
     {
       t: 'p',
-      text: '**Alltag und Familie** means routine and family. **Der Alltag** is your daily routine — waking up, going to work or university, meeting people — the everyday pattern of a day.',
+      text: '**Alltag und Familie** means routine and family. **Der Alltag** is your daily routine — waking up, going to work or university, meeting people — the everyday pattern of a day. Here is a day in Khan’s life, as it appears in the Kursbuch.',
     },
+    { t: 'figure', art: 'd12-routine', alt: 'A cutaway apartment showing a shower, a breakfast table and a front door', caption: 'Der Alltag: the small things that repeat every day.' },
     {
-      t: 'ex',
-      items: [
-        { de: 'Khan geht in die Mensa.', hi: 'Khan is going to the student cafeteria.' },
-        { de: 'Khan trifft Maria.', hi: 'Khan is meeting Maria.' },
-        { de: 'Er fährt in die Uni.', hi: 'He is travelling to the university.' },
-        { de: 'Khan duscht.', hi: 'Khan is taking a shower.' },
-        { de: 'Er lernt in der Bibliothek.', hi: 'He is studying in the library.' },
-        { de: 'Er besucht seine Oma.', hi: 'He is visiting his grandmother.' },
-        { de: 'Er isst Frühstück und liest Nachrichten.', hi: 'He eats breakfast and reads the news.' },
+      t: 'timeline',
+      steps: [
+        { icon: 'utensils', de: 'Khan geht in die Mensa.', en: 'Khan is going to the student cafeteria.' },
+        { icon: 'users', de: 'Khan trifft Maria.', en: 'Khan is meeting Maria.' },
+        { icon: 'building', de: 'Er fährt in die Uni.', en: 'He is travelling to the university.' },
+        { icon: 'drop', de: 'Khan duscht.', en: 'Khan is taking a shower.' },
+        { icon: 'book', de: 'Er lernt in der Bibliothek.', en: 'He is studying in the library.' },
+        { icon: 'home', de: 'Er besucht seine Oma.', en: 'He is visiting his grandmother.' },
+        { icon: 'newspaper', de: 'Er isst Frühstück und liest Nachrichten.', en: 'He eats breakfast and reads the news.' },
       ],
     },
     {
       t: 'tip',
       text: '**Mensa** is a university/college canteen — not the same as a restaurant or a general **Kantine**. **fahren** (to travel/drive) is used for going somewhere by transport (*er fährt in die Uni*); the vowel change is the same a→ä pattern from Tag 4 (du fährst, er fährt).',
     },
+
     { t: 'h', text: '2 · Formelle Uhrzeit — die 24-Stunden-Uhr' },
+    { t: 'figure', art: 'd12-time', alt: 'A large clock tower on a town square', caption: 'On a ticket, a timetable or an announcement, time is read straight off the digits.' },
     {
       t: 'rule',
       title: 'Regel — Stunde + Uhr + Minuten, in the 24-hour clock',
       body: 'Formal time (used on tickets, schedules, official announcements) always uses the **24-hour clock**, and is built as **hour + Uhr + minutes**, read exactly as the digits are written. **17:15** is **siebzehn Uhr fünfzehn**. Exactly on the hour, just say **Uhr**: **12:00** is **zwölf Uhr**. Ask the time with **Wie viel Uhr ist es?** or **Wie spät ist es?**.',
     },
     {
-      t: 'table',
-      caption: 'Formelle Uhrzeit — Beispiele',
-      head: ['24h', 'Deutsch'],
-      rows: [
-        ['04:14', 'vier Uhr vierzehn'],
-        ['16:14', 'sechzehn Uhr vierzehn'],
-        ['17:15', 'siebzehn Uhr fünfzehn'],
-        ['21:20', 'einundzwanzig Uhr zwanzig'],
+      t: 'clock',
+      mode: 'formal',
+      items: [
+        { h: 4, m: 14, de: 'vier Uhr vierzehn' },
+        { h: 16, m: 14, de: 'sechzehn Uhr vierzehn' },
+        { h: 17, m: 15, de: 'siebzehn Uhr fünfzehn' },
+        { h: 21, m: 20, de: 'einundzwanzig Uhr zwanzig' },
       ],
-      say: ['vier Uhr vierzehn', 'sechzehn Uhr vierzehn', 'siebzehn Uhr fünfzehn', 'einundzwanzig Uhr zwanzig'],
     },
+    {
+      t: 'tip',
+      text: 'Look at 04:14 and 16:14: the clock face is **identical**, only the 24-hour number tells morning from afternoon. That is exactly why timetables and exams use it — there is nothing to misread.',
+    },
+
     { t: 'h', text: '3 · Informelle Uhrzeit — halb, vor, nach, Viertel' },
     {
       t: 'rule',
       title: 'Regel — informal time only ever uses the 12-hour clock',
       body: 'In everyday spoken German (**Privatzeit**), time is always said on a **12-hour** basis, built from four building blocks: **halb** (half), **nach** (past/after), **vor** (to/before) and **Viertel** (quarter). The key trick: **halb** always points to the **next** hour, not the one just passed — half five (5:30) is **halb sechs** (literally "half towards six"), not "halb fünf".',
+    },
+    { t: 'clock', mode: 'explorer', say: ALL_INFORMAL_TIMES },
+    {
+      t: 'warn',
+      text: 'The most common mistake: **halb sechs is 5:30, not 6:30.** halb always names the hour you are heading **towards**, counted from the hour just gone. Set the clock above to :30 and watch the circled hour — it is always the **next** one.',
     },
     {
       t: 'table',
@@ -86,10 +100,6 @@ export const d12: Day = {
       ],
     },
     {
-      t: 'warn',
-      text: 'The most common mistake: **halb sechs is 5:30, not 6:30.** halb always names the hour you are heading **towards**, counted from the hour just gone. Say the sentence in your head as "half-way to six" and the direction becomes obvious.',
-    },
-    {
       t: 'ex',
       items: [
         { de: 'Wie viel Uhr ist es? — Es ist Viertel nach sechs.', hi: 'What time is it? — It is quarter past six.' },
@@ -102,18 +112,16 @@ export const d12: Day = {
       t: 'tip',
       text: 'For listening exercises, the teacher’s own trick works well: **write down every word you hear as you hear it**, even the ones you are not sure of, instead of stopping to think mid-audio. Once the audio finishes, work out the time from what you wrote — trying to translate live means missing the next few words.',
     },
+
     { t: 'h', text: '4 · Präpositionen mit der Zeit: um, am, im' },
     {
-      t: 'table',
-      caption: 'Welche Präposition, wann?',
-      head: ['Präposition', 'Verwendung', 'Beispiel'],
-      rows: [
-        ['um', 'exact clock time', 'um sechs Uhr, um halb acht'],
-        ['am', 'days', 'am Montag, am Wochenende'],
-        ['im', 'months and seasons', 'im Januar, im Sommer'],
-        ['von … bis …', 'a time span', 'von fünf bis sechs Uhr'],
+      t: 'preps',
+      items: [
+        { word: 'um', icon: 'clock', use: 'an exact clock time', de: 'um sechs Uhr', en: 'at six o’clock' },
+        { word: 'am', icon: 'calendar', use: 'days (and parts of a day)', de: 'am Montag', en: 'on Monday' },
+        { word: 'im', icon: 'sun', use: 'months and seasons', de: 'im Sommer', en: 'in summer' },
+        { word: 'von … bis', icon: 'arrow', use: 'a stretch of time', de: 'von fünf bis sechs Uhr', en: 'from five to six o’clock' },
       ],
-      say: ['um sechs Uhr', 'am Montag', 'im Januar', 'von fünf bis sechs'],
     },
     {
       t: 'ex',

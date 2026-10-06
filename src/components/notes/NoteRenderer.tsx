@@ -109,6 +109,10 @@ function Block({ b }: { b: NoteBlock }) {
           </div>
         </div>
       )
+
+    default:
+      // visual blocks (figure, timeline, clock, preps) only exist in the rich layout
+      return null
   }
 }
 

@@ -27,6 +27,11 @@ export interface Vocab {
   exHi?: string
 }
 
+/** Names of the inline SVG icons in components/notes/visuals.tsx */
+export type IconName =
+  | 'bulb' | 'alert' | 'clock' | 'calendar' | 'sun' | 'utensils' | 'users'
+  | 'building' | 'drop' | 'book' | 'home' | 'newspaper' | 'target' | 'arrow'
+
 export type NoteBlock =
   | { t: 'h'; text: string }
   | { t: 'p'; text: string }
@@ -36,6 +41,12 @@ export type NoteBlock =
   | { t: 'tip'; text: string }
   | { t: 'warn'; text: string }
   | { t: 'sticky'; text: string }
+  /* ── visual blocks: only drawn by the rich layout (Day.look === 'rich') ── */
+  | { t: 'figure'; art: string; alt: string; caption?: string }
+  | { t: 'timeline'; steps: { icon: IconName; de: string; en: string }[] }
+  | { t: 'clock'; mode: 'formal'; items: { h: number; m: number; de: string }[] }
+  | { t: 'clock'; mode: 'explorer'; say: string[] }
+  | { t: 'preps'; items: { word: string; icon: IconName; use: string; de: string; en: string }[] }
 
 export type Exercise =
   | { k: 'mcq'; q: string; options: string[]; a: number; why: string }
@@ -65,6 +76,10 @@ export interface Day {
   /** Which Goethe A1 module today's drill feeds */
   examSkill: 'Hören' | 'Lesen' | 'Schreiben' | 'Sprechen'
   notes: NoteBlock[]
+  /** 'rich' = illustrated, colour-coded cards instead of ruled notebook paper */
+  look?: 'rich'
+  /** name of the hero illustration in public/art (without extension) */
+  hero?: string
   vocab: Vocab[]
   dialogue?: Dialogue
   exercises: Exercise[]

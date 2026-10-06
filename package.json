@@ -13,6 +13,7 @@
     "serve": "npm run build && concurrently -n api,web -c magenta,cyan \"node server/index.mjs\" \"vite preview\"",
     "typecheck": "tsc --noEmit",
     "audio": "node scripts/build-audio.mjs",
+    "art": "node scripts/build-art.mjs",
     "check": "node scripts/check-content.mjs"
   },
   "dependencies": {

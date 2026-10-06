@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { dayById, isReady, planFor, weekOf } from '@/data/curriculum'
 import { useStore } from '@/lib/store'
 import { NoteRenderer } from '@/components/notes/NoteRenderer'
+import { RichHero, RichNotes } from '@/components/notes/RichNotes'
 import { VocabCard } from '@/components/vocab/VocabCard'
 import { Quiz } from '@/components/games/Quiz'
 import { Segmented, Pill, SpeakButton, Empty, ProgressRing } from '@/components/ui'
@@ -65,6 +66,10 @@ export default function DayView() {
   return (
     <div className="page">
       {/* header */}
+      {day.look === 'rich' ? (
+        <RichHero day={day} progress={steps / 3} color={color} />
+      ) : (
+      <>
       <div className="between wrap" style={{ gap: 'var(--s4)', marginBottom: 'var(--s5)' }}>
         <div className="col" style={{ gap: 8 }}>
           <Link to="/kurs" className="small dim" style={{ width: 'fit-content' }}>← Course plan</Link>
@@ -84,6 +89,8 @@ export default function DayView() {
       </div>
 
       <DayHero title={day.title} />
+      </>
+      )}
 
       <div style={{ marginBottom: 'var(--s5)' }}>
         <Segmented
@@ -107,7 +114,7 @@ export default function DayView() {
           {/* ── NOTES ── */}
           {tab === 'notes' && (
             <>
-              <NoteRenderer blocks={day.notes} />
+              {day.look === 'rich' ? <RichNotes blocks={day.notes} /> : <NoteRenderer blocks={day.notes} />}
               <div className="card card-pad between wrap" style={{ marginTop: 'var(--s5)', gap: 'var(--s4)' }}>
                 <div className="col" style={{ gap: 2 }}>
                   <span className="h3">Copied the notes?</span>

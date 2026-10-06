@@ -9,7 +9,7 @@
     "api/image.js": { "maxDuration": 60 }
   },
   "rewrites": [
-    { "source": "/((?!api/|audio/|assets/|logo.svg|favicon.svg).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|audio/|art/|assets/|logo.svg|favicon.svg).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
@@ -21,6 +21,12 @@
     },
     {
       "source": "/audio/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/art/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
