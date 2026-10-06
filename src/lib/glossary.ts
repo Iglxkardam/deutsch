@@ -1,5 +1,6 @@
 import { ALL_VOCAB, DOMAIN_VOCAB } from '@/data/curriculum'
 import { bareNoun } from './utils'
+import { DAY_GLOSS } from '@/data/gloss'
 
 /**
  * Hover-translation dictionary.
@@ -837,6 +838,8 @@ function buildIndex(): Map<string, Gloss> {
   const map = new Map<string, Gloss>()
 
   for (const [k, v] of Object.entries(EXTRA)) map.set(k, v)
+  // per-day additions never override a hand-checked EXTRA entry
+  for (const [k, v] of Object.entries(DAY_GLOSS)) if (!map.has(k)) map.set(k, v)
 
   for (const v of [...ALL_VOCAB, ...DOMAIN_VOCAB]) {
     const article = v.de.match(/^(der|die|das)\s+/i)?.[1]

@@ -5,6 +5,7 @@ import type { Day, NoteBlock } from '@/types'
 import { Gloss } from '@/components/Gloss'
 import { Pill, ProgressRing, SpeakButton } from '@/components/ui'
 import { ClockExplorer, FormalClocks, Icon, PrepCards, Timeline } from './visuals'
+import { CompareList, ConjCard, NounCards, NumberTiles, SentenceBuilder, Tiles } from './visuals2'
 
 /** **bold** segments become the highlighted German term; everything is glossable. */
 function rich(text: string): ReactNode {
@@ -135,6 +136,24 @@ function Block({ b }: { b: NoteBlock }) {
 
     case 'preps':
       return <PrepCards items={b.items} />
+
+    case 'sentence':
+      return <SentenceBuilder items={b.items} />
+
+    case 'conj':
+      return <ConjCard verb={b.verb} en={b.en} rows={b.rows} note={b.note} />
+
+    case 'compare':
+      return <CompareList rows={b.rows} />
+
+    case 'nouns':
+      return <NounCards items={b.items} />
+
+    case 'numbers':
+      return <NumberTiles items={b.items} />
+
+    case 'tiles':
+      return <Tiles items={b.items} cols={b.cols} />
 
     default:
       return null

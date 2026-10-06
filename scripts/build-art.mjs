@@ -9,8 +9,8 @@
  *   npm run art -- --force   # regenerate everything
  *   npm run art -- d12-hero  # regenerate one by name
  *
- * To add art for another day, add entries to ART below and reference the name
- * from a `figure` note block (art: 'd12-hero') or from the day hero.
+ * To add art for a day, create scripts/art/dNN.json and reference the names from a
+ * `figure` note block (art: 'd12-hero') or from the day's `hero` field.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -45,25 +45,13 @@ const STYLE =
   'Clean geometric shapes, subtle paper grain, generous negative space, calm and sophisticated, ' +
   'no text, no letters, no numbers, no watermark, no logo.'
 
-const ART = {
-  'd12-hero': {
-    ratio: '16:9',
-    prompt:
-      'A young student with a backpack walking down a charming German old-town street in warm morning light, ' +
-      'a tram on the road, a university building and a tall clock tower in the background, long soft shadows.',
-  },
-  'd12-time': {
-    ratio: '16:9',
-    prompt:
-      'An oversized friendly clock tower on a German town square seen from below, the round clock face has no numerals, ' +
-      'tiny people and a café with striped awning at its feet, late afternoon golden light.',
-  },
-  'd12-routine': {
-    ratio: '16:9',
-    prompt:
-      'Cutaway view of a small bright apartment showing a student morning routine in separate cozy corners: ' +
-      'a shower, a breakfast table with a newspaper and coffee, a backpack by the front door, a window with sunrise.',
-  },
+/** Per-day specs live in scripts/art/*.json: { "<name>": { "ratio": "16:9", "prompt": "…" } } */
+const ART = {}
+const ART_DIR = path.join(ROOT, 'scripts', 'art')
+if (fs.existsSync(ART_DIR)) {
+  for (const f of fs.readdirSync(ART_DIR).filter((x) => x.endsWith('.json')).sort()) {
+    Object.assign(ART, JSON.parse(fs.readFileSync(path.join(ART_DIR, f), 'utf8')))
+  }
 }
 
 const only = process.argv.slice(2).filter((a) => !a.startsWith('--'))

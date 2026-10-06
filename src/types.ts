@@ -31,6 +31,11 @@ export interface Vocab {
 export type IconName =
   | 'bulb' | 'alert' | 'clock' | 'calendar' | 'sun' | 'utensils' | 'users'
   | 'building' | 'drop' | 'book' | 'home' | 'newspaper' | 'target' | 'arrow'
+  | 'globe' | 'phone' | 'mail' | 'user' | 'briefcase' | 'chat' | 'map' | 'cart'
+  | 'cup' | 'question' | 'check' | 'cross' | 'ear' | 'pencil' | 'hash'
+
+/** Colour roles for the sentence builder. */
+export type SentenceRole = 'subj' | 'verb' | 'obj' | 'time' | 'place' | 'neg' | 'other'
 
 export type NoteBlock =
   | { t: 'h'; text: string }
@@ -47,6 +52,18 @@ export type NoteBlock =
   | { t: 'clock'; mode: 'formal'; items: { h: number; m: number; de: string }[] }
   | { t: 'clock'; mode: 'explorer'; say: string[] }
   | { t: 'preps'; items: { word: string; icon: IconName; use: string; de: string; en: string }[] }
+  /** colour-coded sentence parts, e.g. subject / verb / object, so word order and case are SEEN */
+  | { t: 'sentence'; items: { parts: { text: string; role: SentenceRole }[]; en: string }[] }
+  /** one verb conjugated: stem muted, ending highlighted. stem + ending must equal the written form. */
+  | { t: 'conj'; verb: string; en: string; rows: { pron: string; stem: string; ending: string }[]; note?: string }
+  /** common mistakes: wrong form struck through, right form beside it, and why */
+  | { t: 'compare'; rows: { wrong: string; right: string; why: string }[] }
+  /** gender cards: der blue, die pink, das green. Must agree with the vocabulary list. */
+  | { t: 'nouns'; items: { art: 'der' | 'die' | 'das'; noun: string; pl?: string; en: string }[] }
+  /** number tiles. The German word is machine-checked against the digits. */
+  | { t: 'numbers'; items: { n: number; de: string }[] }
+  /** generic grid of big-glyph tiles (letters, weekdays, months …) */
+  | { t: 'tiles'; cols?: 3 | 4 | 6; items: { big: string; small?: string; sub?: string; say?: string }[] }
 
 export type Exercise =
   | { k: 'mcq'; q: string; options: string[]; a: number; why: string }

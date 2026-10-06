@@ -80,6 +80,12 @@ for (const day of DAYS) {
     // visual blocks of the rich layout also speak
     if (b.t === 'timeline') for (const s of b.steps) add(s.de)
     if (b.t === 'preps') for (const i of b.items) add(i.de)
+    if (b.t === 'sentence') for (const i of b.items) add(i.parts.map((p) => p.text).join(' ').replace(/\s+([.,?!])/g, '$1'))
+    if (b.t === 'conj') for (const r of b.rows) add(`${r.pron.split('/')[0].trim()} ${r.stem}${r.ending}`)
+    if (b.t === 'compare') for (const r of b.rows) add(r.right)
+    if (b.t === 'nouns') for (const n of b.items) add(`${n.art} ${n.noun}`)
+    if (b.t === 'numbers') for (const n of b.items) add(n.de)
+    if (b.t === 'tiles') for (const t of b.items) if (t.say) add(t.say)
     if (b.t === 'clock') {
       if (b.mode === 'formal') for (const i of b.items) add(i.de)
       else for (const t of b.say) add(t)

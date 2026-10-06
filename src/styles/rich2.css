@@ -1,0 +1,121 @@
+/* ── Rich lesson blocks, part 2 ───────────────────────────────────────────
+   Sentence builder · conjugation card · common mistakes · gender cards ·
+   number tiles · big-glyph tiles. Same rules as rich.css: restrained colour,
+   everything from tokens, light and dark.                                  */
+
+/* shared role colours (also reused by the sentence builder legend) */
+.rc-role {
+  --r: var(--ink-2);
+  display: inline-block; padding: 4px 11px 5px; border-radius: 10px;
+  font-family: var(--font-read); font-weight: 600; line-height: 1.25;
+  color: var(--r);
+  background: color-mix(in srgb, var(--r) 11%, var(--paper));
+  border: 1px solid color-mix(in srgb, var(--r) 30%, transparent);
+}
+.rc-role-subj { --r: #3D63AE; }
+.rc-role-verb { --r: #D2603A; }
+.rc-role-obj { --r: #2C8480; }
+.rc-role-time { --r: #85579F; }
+.rc-role-place { --r: #B5801F; }
+.rc-role-neg { --r: #C2456F; }
+.rc-role-other { --r: var(--ink-2); background: transparent; border-color: transparent; padding-left: 2px; padding-right: 2px; }
+[data-theme='dark'] .rc-role-subj { --r: #8FAEE8; }
+[data-theme='dark'] .rc-role-verb { --r: #EE8A66; }
+[data-theme='dark'] .rc-role-obj { --r: #5FC2BC; }
+[data-theme='dark'] .rc-role-time { --r: #C09AD6; }
+[data-theme='dark'] .rc-role-place { --r: #E0B260; }
+[data-theme='dark'] .rc-role-neg { --r: #EE86A8; }
+
+/* ── sentence builder ──────────────────────────────────────────────────── */
+.rc-sent { display: flex; flex-direction: column; gap: 10px; }
+.rc-sent-legend { display: flex; flex-wrap: wrap; gap: 6px; }
+.rc-sent-legend .rc-role { font-family: var(--font-ui); font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 10px 4px; }
+.rc-sent-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 13px 14px 13px 16px; border-radius: 16px; background: var(--paper-2); border: 1px solid var(--line);
+}
+.rc-sent-parts { display: flex; flex-wrap: wrap; gap: 6px; font-size: 18.5px; }
+.rc-sent-en { font-size: 13.5px; color: var(--ink-3); margin-top: 7px; line-height: 1.45; }
+
+/* ── conjugation card ──────────────────────────────────────────────────── */
+.rc-conj { border: 1px solid var(--line-strong); border-radius: 18px; overflow: hidden; background: var(--paper); }
+.rc-conj-head {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 14px 20px;
+  background: color-mix(in srgb, var(--rc-accent) 9%, var(--paper)); border-bottom: 1px solid var(--line);
+}
+.rc-conj-verb { font-family: var(--font-read); font-size: 24px; font-weight: 750; letter-spacing: -0.01em; }
+.rc-conj-en { font-size: 14px; color: var(--ink-3); }
+.rc-conj-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rc-conj-row {
+  display: grid; grid-template-columns: 88px 1fr auto; align-items: center; gap: 8px;
+  padding: 9px 12px 9px 20px; border-bottom: 1px solid var(--line);
+}
+.rc-conj-row:nth-child(odd) { border-right: 1px solid var(--line); }
+.rc-conj-row:nth-last-child(-n + 2) { border-bottom: none; }
+.rc-conj-pron { font-size: 14px; color: var(--ink-3); font-weight: 600; }
+.rc-conj-form { font-family: var(--font-read); font-size: 21px; font-weight: 600; }
+.rc-conj-stem { color: var(--ink-2); }
+.rc-conj-end { color: var(--rc-accent); font-weight: 800; background: color-mix(in srgb, var(--rc-accent) 12%, transparent); border-radius: 6px; padding: 0 3px; margin-left: 1px; }
+.rc-conj-note { padding: 12px 20px 14px; font-size: 14.5px; line-height: 1.6; color: var(--ink-2); border-top: 1px solid var(--line); background: var(--paper-2); }
+@media (max-width: 640px) {
+  .rc-conj-grid { grid-template-columns: 1fr; }
+  .rc-conj-row:nth-child(odd) { border-right: none; }
+  .rc-conj-row:nth-last-child(-n + 2) { border-bottom: 1px solid var(--line); }
+  .rc-conj-row:last-child { border-bottom: none; }
+}
+
+/* ── common mistakes ───────────────────────────────────────────────────── */
+.rc-cmp { display: flex; flex-direction: column; gap: 10px; }
+.rc-cmp-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; padding: 12px 14px 12px; border-radius: 16px;
+  background: var(--paper-2); border: 1px solid var(--line);
+}
+.rc-cmp-cell { display: flex; align-items: center; gap: 9px; padding: 8px 12px; border-radius: 11px; min-width: 0; }
+.rc-cmp-wrong { background: color-mix(in srgb, #C2456F 8%, var(--paper)); border: 1px solid color-mix(in srgb, #C2456F 24%, transparent); }
+.rc-cmp-right { background: color-mix(in srgb, var(--green) 10%, var(--paper)); border: 1px solid color-mix(in srgb, var(--green) 30%, transparent); }
+.rc-cmp-mark { flex: none; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; }
+.rc-cmp-wrong .rc-cmp-mark { background: color-mix(in srgb, #C2456F 18%, transparent); color: #C2456F; }
+.rc-cmp-right .rc-cmp-mark { background: color-mix(in srgb, var(--green) 20%, transparent); color: var(--green); }
+.rc-cmp-text { font-family: var(--font-read); font-size: 17px; font-weight: 600; line-height: 1.35; flex: 1; min-width: 0; }
+.rc-cmp-wrong .rc-cmp-text { color: var(--ink-3); text-decoration: line-through; text-decoration-thickness: 1.5px; text-decoration-color: color-mix(in srgb, #C2456F 70%, transparent); }
+.rc-cmp-why { grid-column: 1 / -1; font-size: 14px; line-height: 1.55; color: var(--ink-2); padding: 0 4px; }
+@media (max-width: 640px) { .rc-cmp-row { grid-template-columns: 1fr; } }
+
+/* ── gender cards ──────────────────────────────────────────────────────── */
+.rc-nouns { display: grid; grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 12px; }
+.rc-noun { --g: var(--blue); border: 1px solid color-mix(in srgb, var(--g) 28%, transparent); border-radius: 16px; padding: 12px 14px 12px; background: color-mix(in srgb, var(--g) 7%, var(--paper)); }
+.rc-noun-die { --g: var(--pink); }
+.rc-noun-das { --g: var(--green); }
+.rc-noun-top { display: flex; align-items: center; justify-content: space-between; margin: -2px -6px 2px 0; }
+.rc-noun-art { font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; background: var(--g); border-radius: 999px; padding: 3px 11px 4px; }
+.rc-noun-word { font-family: var(--font-read); font-size: 22px; font-weight: 700; line-height: 1.2; }
+.rc-noun-en { font-size: 13.5px; color: var(--ink-2); margin-top: 1px; }
+.rc-noun-pl { font-family: var(--font-mono); font-size: 12px; color: var(--ink-3); margin-top: 6px; }
+
+/* ── number tiles ──────────────────────────────────────────────────────── */
+.rc-numbers { display: grid; grid-template-columns: repeat(auto-fill, minmax(236px, 1fr)); gap: 10px; }
+.rc-num-tile {
+  position: relative; display: flex; flex-direction: column; gap: 2px; padding: 12px 40px 12px 16px; border-radius: 16px;
+  background: var(--paper-2); border: 1px solid var(--line);
+}
+.rc-num-digit { font-family: var(--font-mono); font-size: 25px; font-weight: 800; letter-spacing: -0.03em; color: var(--rc-accent); line-height: 1.15; }
+.rc-num-de { font-family: var(--font-read); font-size: 15px; font-weight: 600; line-height: 1.3; overflow-wrap: break-word; }
+.rc-num-tile .btn { position: absolute; top: 6px; right: 4px; }
+
+/* ── big-glyph tiles ───────────────────────────────────────────────────── */
+.rc-tiles { display: grid; gap: 10px; }
+.rc-tiles-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.rc-tiles-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.rc-tiles-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.rc-tile {
+  position: relative; text-align: center; padding: 14px 8px 12px; border-radius: 16px; background: var(--paper-2);
+  border: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.rc-tile-big { font-family: var(--font-read); font-size: 28px; font-weight: 750; line-height: 1.15; color: var(--rc-accent); overflow-wrap: anywhere; }
+.rc-tile-small { font-size: 13.5px; font-weight: 600; color: var(--ink-2); }
+.rc-tile-sub { font-size: 12.5px; color: var(--ink-3); }
+.rc-tile-say { margin-top: 2px; }
+@media (max-width: 720px) {
+  .rc-tiles-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rc-tiles-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
