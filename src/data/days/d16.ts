@@ -14,12 +14,16 @@ export const d16: Day = {
     { t: 'h', text: '1 · Sprechen üben: einfach und natürlich' },
     {
       t: 'p',
-      text: 'This lesson was almost all **speaking practice** in breakout rooms: pairs got a situation (a picture such as a taxi or an office), prepared a short conversation, and performed it. The teacher announced that this becomes the **daily routine for the last half hour** of each class, so that you lose the fear of speaking. She said half an hour of **self-study** a day is enough. There was little new grammar; the corrections are what matter, so they are collected here.',
+      text: 'This lesson was almost all **speaking practice** in breakout rooms: pairs got a situation (a picture such as a taxi or an office), prepared a short conversation, and performed it.\n\n- The teacher announced that this becomes the **daily routine for the last half hour** of each class, so that you lose the fear of speaking.\n- She said half an hour of **self-study** a day is enough.\n- There was little new grammar; the corrections are what matter, so they are collected here.',
     },
     {
       t: 'rule',
       title: 'Strategie — speak like a child: short and simple',
-      body: 'Build sentences as **subject – verb – object** and keep them short. Do **not** translate word for word from English or Hindi. Think of the German pattern first: **Ich gehe nach Hause**, not “I go home” word by word. With a **modal verb** the second verb goes to the **end**: **Ich will den Eiffelturm sehen**. Short correct sentences score better in the exam than long ones with mistakes.',
+      body: 'Build sentences as **subject – verb – object** (verb in position 2, **Tag 5**) and keep them short.\n\n- Do **not** translate word for word from English or Hindi. Think of the German pattern first.\n- “I am going home” is **Ich gehe nach Hause** (one present tense, and **nach Hause** for “home”).\n- With a **modal verb** the second verb goes to the **end**: **Ich will den Eiffelturm sehen** (**Tag 14**).\n- In the speaking exam each task gets full points if you do it and are understood, half points if mistakes mean you do it only partly, and 0 if you cannot be understood, so a short correct sentence is the safer choice.',
+    },
+    {
+      t: 'p',
+      text: 'The first situation was at the **market**: **Was kaufst du heute? — Ich kaufe drei Tomaten und vier Äpfel.**\n\nA student wanted the word for “suggestion”:\n\n- the noun is **der Vorschlag** (**Das ist ein guter Vorschlag.**)\n- the verb is the separable **vorschlagen**',
     },
     {
       t: 'compare',
@@ -27,24 +31,25 @@ export const d16: Day = {
         { wrong: 'Ich will sehen den Eiffelturm.', right: 'Ich will den Eiffelturm sehen.', why: 'With a modal verb the infinitive goes to the end of the sentence.' },
         { wrong: 'Ich gehe home.', right: 'Ich gehe nach Hause.', why: 'nach Hause is a fixed phrase for “going home”; do not mix in English words.' },
         { wrong: 'Mir gut.', right: 'Mir geht es gut.', why: 'The sentence is incomplete without geht es. You can also just say: Gut, danke.' },
+        { wrong: 'Äpfel ist sehr teuer.', right: 'Äpfel sind sehr teuer.', why: 'Äpfel is plural, so the verb is plural too: sind.' },
       ],
     },
     {
       t: 'tip',
-      text: 'Use your **dictionary for meanings only** and learn from the lessons. A translator produces forms you have not learned yet, and the teacher notices words that were never taught.',
+      text: 'The class prepared the conversations **without the internet**, using only words from the lessons. That is the right way to practise (the dictionary advice is on **Tag 15**).',
     },
 
     { t: 'h', text: '2 · Wohin? gehen und fahren' },
     {
       t: 'p',
-      text: '**Wohin?** asks where you are going. The verbs **gehen** and **fahren** both mean “to go”, but they are not the same: **gehen** is used when you go **on foot**, **fahren** when you go **by vehicle** (bus, train, car, bike, taxi).',
+      text: '**Wohin?** asks where you are going. **gehen** and **fahren** are both “to go” in English, but they are not the same.\n\n- **fahren**: you travel **in or on a vehicle** (bus, train, car, bike, taxi), so it is the verb for trips to other cities: **Ich fahre nach Berlin.**\n- **gehen**: you **walk**; it is also the normal verb for going to a place or an activity in your town when the transport does not matter: **Ich gehe ins Kino** is fine even if you take the bus there.',
     },
     {
       t: 'table',
       caption: 'Wohin gehst du? Wohin fährst du?',
       head: ['Frage', 'Antwort', 'Regel'],
       rows: [
-        ['Wohin gehst du?', 'Ich gehe in die Mensa.', 'gehen: on foot, a place close by'],
+        ['Wohin gehst du?', 'Ich gehe in die Mensa.', 'gehen: a place in town'],
         ['Wohin gehst du?', 'Ich gehe nach Hause.', 'nach Hause = home (fixed phrase)'],
         ['Wohin fährst du?', 'Ich fahre nach Berlin.', 'fahren: by vehicle; nach + city'],
         ['Wohin möchtest du gehen?', 'Ich möchte ins Kino gehen.', 'ins Kino = in + das + Kino'],
@@ -58,13 +63,19 @@ export const d16: Day = {
     },
     {
       t: 'tip',
-      text: 'In class the rule of thumb was: **gehen** for places nearby in town (market, church, station), **fahren** for travelling to other cities. The exact difference is **on foot** or **by vehicle**: you can **fahren** to the market by bike, but if you walk there you **gehen**. For cities and countries use **nach** (**Tag 17** explains **nach** and **zu**).',
+      text: 'In class the rule of thumb was: **gehen** for places in town (market, church, station), **fahren** for travelling to other cities. That works for most sentences.\n\n- When you say **how** you travel, or you clearly go by car, bus or bike, use **fahren**: *Ich fahre mit dem Fahrrad zum Markt* (**mit** + vehicle: **Tag 17**).\n- Walking is **zu Fuß gehen** (**Tag 9**).\n- For cities and most countries use **nach** (**Tag 17** explains **nach** and **zu**).',
     },
 
     { t: 'h', text: '3 · Im Taxi' },
     {
       t: 'p',
-      text: 'Picture F of the task was a taxi ride: one student was the driver, one the customer. The useful questions are **Wohin möchten Sie fahren?**, **Wie viel Zeit brauchen wir?** and **Wann kommen wir an?** (**ankommen**, Tag 14). The customer gives the place with **zu** or **nach**; **Fahren Sie bitte zum Bahnhof** is the Sie-command you know from **Tag 9**.',
+      text: 'Picture F of the task was a taxi ride: one student was the driver, one the customer. The teacher pointed back to the taxi dialogue from Kapitel 3 (**Tag 8**).\n\n- The useful questions are **Wohin möchten Sie fahren?**, **Wie viel Zeit brauchen wir?** and **Wann kommen wir an?** (**ankommen**, Tag 14).\n- The customer gives the place with **zu** or **nach**.\n- **Fahren Sie bitte zum Bahnhof** is the Sie-command you know from **Tag 9**.',
+    },
+    {
+      t: 'compare',
+      rows: [
+        { wrong: 'Haben wir nicht kommen an?', right: 'Wann kommen wir an?', why: 'A student tried to say “Haven’t we arrived yet?” with a past tense, which you have not learned. Ask in the present instead (or: Sind wir bald da? = Are we there soon?).' },
+      ],
     },
     {
       t: 'ex',
@@ -80,15 +91,39 @@ export const d16: Day = {
     { t: 'h', text: '4 · Eine Stadt und ein Foto beschreiben' },
     {
       t: 'p',
-      text: 'Another situation: describe a place. Two ways to say “there is”: **es gibt** + **accusative** (*Es gibt einen Turm, es gibt eine Brücke*), or **da ist / dort ist** + a specific thing (*Da ist eine Universität*). To give its name use **heißen**: **Sie heißt …**.',
+      text: 'Another situation: describe a place. There are two ways to say “there is”.\n\n- **es gibt** says that something **exists** (in a town, in a place) and takes the **accusative**.\n- **da ist / dort ist** points to a place, “there (at that spot) is”, and the noun stays **nominative**.',
+    },
+    {
+      t: 'table',
+      caption: 'es gibt und da ist',
+      head: ['', 'es gibt', 'da ist / dort ist'],
+      rows: [
+        ['Meaning', 'something exists (in a town, in a place)', 'there (at that spot) is'],
+        ['Case', 'accusative', 'nominative'],
+        ['Example', 'Es gibt einen Turm.', 'Da ist ein Turm.'],
+        ['Example', 'Es gibt eine Brücke.', 'Da ist eine Universität.'],
+      ],
+    },
+    {
+      t: 'p',
+      text: 'To give its name use **heißen**: **Sie heißt …**.',
     },
     {
       t: 'ex',
       items: [
         { de: 'Da ist eine Universität. Sie heißt Delhi University.', hi: 'There is a university. It is called Delhi University.' },
-        { de: 'Sie ist sehr bekannt in Deutschland.', hi: 'It is very well known in Germany.' },
+        { de: 'Sie ist in Indien sehr bekannt.', hi: 'It is very well known in India.' },
         { de: 'Viele Studenten studieren hier.', hi: 'Many students study here.' },
         { de: 'Es gibt eine Brücke und einen Turm.', hi: 'There is a bridge and a tower.' },
+        { de: 'Es gibt viele Cafés.', hi: 'There are many cafés.' },
+      ],
+    },
+    {
+      t: 'compare',
+      rows: [
+        { wrong: 'Es gibt ein Turm.', right: 'Es gibt einen Turm.', why: 'After es gibt a masculine noun takes the accusative: einen.' },
+        { wrong: 'Da ist einen Turm.', right: 'Da ist ein Turm.', why: 'After da ist the noun is nominative: ein Turm.' },
+        { wrong: 'Es geben viele Cafés.', right: 'Es gibt viele Cafés.', why: 'es gibt stays singular, even when a plural follows.' },
       ],
     },
     {
@@ -97,7 +132,7 @@ export const d16: Day = {
     },
     {
       t: 'p',
-      text: 'A **Familienfoto** is a good speaking task: **Wer ist das?** (Who is that?) — **Das ist unser Großvater.** To say someone *looks* young use the separable verb **aussehen**: **Er sieht so jung aus.** (**unser** = our, the same ending pattern as **mein**: unser Großvater, unsere Lehrerin.)',
+      text: 'A **Familienfoto** is a good speaking task (the Kursbuch game on p. 74 has the same one: **Wer ist das? — Das ist … Mutter. Und hier siehst du … Vater.**).\n\n- Ask **Wer ist das?** (Who is that?) — **Das ist unser Großvater.**\n- To say someone *looks* young use the separable verb **aussehen**: **Er sieht so jung aus.**\n- **unser** = our, the same ending pattern as **mein**: unser Großvater, unsere Lehrerin.\n- To say where things are in a photo: **Auf dem Foto sehe ich …** (sehen + accusative), **links / rechts ist …**, **im Hintergrund ist …** (in the background).',
     },
     {
       t: 'ex',
@@ -107,14 +142,20 @@ export const d16: Day = {
         { de: 'Das ist unser Großvater. Er sieht so jung aus!', hi: 'That is our grandfather. He looks so young!' },
         { de: 'Sie ist Lehrerin.', hi: 'She is a teacher.' },
         { de: 'Kommen Sie mit!', hi: 'Come along! (formal)' },
-        { de: 'Gehen wir!', hi: 'Let us go!' },
+        { de: 'Gehen wir!', hi: 'Let’s go!' },
+      ],
+    },
+    {
+      t: 'compare',
+      rows: [
+        { wrong: 'Kommen Sie hier!', right: 'Kommen Sie bitte her!', why: 'hier = here (where something is). When someone should come towards you, German uses her (or hierher).' },
       ],
     },
 
     { t: 'h', text: '5 · Im Büro: eine Besprechung' },
     {
       t: 'p',
-      text: 'The last picture was an office. Two colleagues talk about a **Besprechung** (meeting): when it is, and not being late. A negative request to a person you address with **Sie** is **Kommen Sie nicht zu spät!**',
+      text: 'The last picture was an office. Two colleagues talk about a **Besprechung** (meeting): when it is, and not being late.\n\nA negative request to a person you address with **Sie** is **Kommen Sie nicht zu spät!**',
     },
     {
       t: 'table',
@@ -124,9 +165,9 @@ export const d16: Day = {
         ['A', 'Guten Morgen, Frau Weber. Was machen Sie hier?', 'Good morning, Ms Weber. What are you doing here?'],
         ['B', 'Ich gehe in die Kantine. Ich brauche einen Kaffee.', 'I am going to the canteen. I need a coffee.'],
         ['A', 'Kommen Sie heute zur Besprechung?', 'Are you coming to the meeting today?'],
-        ['B', 'Ja. Um wie viel Uhr ist die Besprechung?', 'Yes. At what time is the meeting?'],
+        ['B', 'Ja. Um wie viel Uhr ist die Besprechung?', 'Yes. What time is the meeting?'],
         ['A', 'Um halb zehn. Kommen Sie bitte nicht zu spät!', 'At half past nine. Please do not be late!'],
-        ['B', 'Ja, sicher. Alles klar, bis bald!', 'Yes, certainly. All clear, see you soon!'],
+        ['B', 'Ja, sicher. Alles klar, bis bald!', 'Yes, sure. All right, see you soon!'],
       ],
       say: [
         'Guten Morgen, Frau Weber. Was machen Sie hier?',
@@ -139,7 +180,15 @@ export const d16: Day = {
     },
     {
       t: 'tip',
-      text: 'This conversation uses **Sie** (colleagues who are not close, or a boss). With a close colleague you would say **du**: *Kommst du heute zur Besprechung?* Pick one form and keep it for the whole conversation (**Tag 2**). **halb zehn** is **9:30** (Tag 12).',
+      text: 'This conversation uses **Sie** (colleagues who are not close, or a boss).\n\n- With a close colleague you would say **du**: *Kommst du heute zur Besprechung?*\n- Pick one form and keep it for the whole conversation (**Tag 2**).\n- **halb zehn** is **9:30** (Tag 12).',
+    },
+    {
+      t: 'compare',
+      rows: [
+        { wrong: 'Wir haben einen Besprechung.', right: 'Wir haben eine Besprechung.', why: 'die Besprechung is feminine (Tag 15), so the accusative is eine.' },
+        { wrong: 'Kommst du heute in der Besprechung?', right: 'Kommst du heute zur Besprechung?', why: 'Going to a meeting: zu + der = zur (Tag 17). in der Besprechung means “in the meeting” (where you are).' },
+        { wrong: 'Kommen nicht zu spät!', right: 'Kommen Sie nicht zu spät!', why: 'The Sie-command needs Sie right after the verb (Tag 9).' },
+      ],
     },
     {
       t: 'sticky',
@@ -159,7 +208,7 @@ export const d16: Day = {
     { de: 'bekannt', hi: 'मशहूर, जाना-माना', en: 'well known', type: 'adj', ex: 'Die Universität ist sehr bekannt.', exHi: 'The university is very well known.' },
     { de: 'das Familienfoto', hi: 'परिवार की तस्वीर', en: 'family photo', type: 'noun', gender: 'n', pl: 'die Familienfotos', ex: 'Hier ist unser Familienfoto.', exHi: 'Here is our family photo.' },
     { de: 'der Großvater', hi: 'दादा, नाना', en: 'grandfather', type: 'noun', gender: 'm', pl: 'die Großväter', ex: 'Das ist unser Großvater.', exHi: 'That is our grandfather.' },
-    { de: 'die Großmutter', hi: 'दादी, नानी', en: 'grandmother', type: 'noun', gender: 'f', pl: 'die Großmütter', ex: 'Julia hilft ihrer Großmutter.', exHi: 'Julia helps her grandmother.' },
+    { de: 'die Großmutter', hi: 'दादी, नानी', en: 'grandmother', type: 'noun', gender: 'f', pl: 'die Großmütter', ex: 'Das ist unsere Großmutter.', exHi: 'That is our grandmother.' },
     { de: 'aussehen', hi: 'दिखना, लगना', en: 'to look, to appear', type: 'verb', forms: 'ich sehe aus · du siehst aus · er sieht aus', ex: 'Er sieht so jung aus.', exHi: 'He looks so young.' },
     { de: 'jung', hi: 'जवान, युवा', en: 'young', type: 'adj', ex: 'Mein Großvater ist noch jung.', exHi: 'My grandfather is still young.' },
   ],
@@ -180,7 +229,7 @@ export const d16: Day = {
   },
   exercises: [
     { k: 'mcq', q: 'What does “wohin” ask for?', options: ['the direction or destination', 'the origin', 'the time', 'the person'], a: 0, why: 'Wohin = where to. Woher = where from.' },
-    { k: 'mcq', q: 'Which verb do you use for going by vehicle?', options: ['fahren', 'gehen', 'laufen', 'bleiben'], a: 0, why: 'fahren = go by vehicle; gehen = go on foot.' },
+    { k: 'mcq', q: 'Which verb do you use for going by vehicle?', options: ['fahren', 'gehen', 'laufen', 'bleiben'], a: 0, why: 'fahren = travel in or on a vehicle. gehen = walk, and also the usual verb for going to a place in town (Ich gehe ins Kino).' },
     { k: 'fill', q: 'Ich ___ nach Berlin.  (fahren, ich)', a: ['fahre'], why: 'ich fahre.' },
     { k: 'fill', q: 'Wohin ___ du?  (gehen, du)', a: ['gehst'], why: 'du gehst.' },
     { k: 'mcq', q: 'Which sentence says “I am going home”?', options: ['Ich gehe nach Hause.', 'Ich gehe home.', 'Ich gehe zu Hause.', 'Ich gehe in Hause.'], a: 0, why: 'nach Hause = going home; zu Hause = at home.' },
@@ -199,7 +248,7 @@ export const d16: Day = {
     { k: 'mcq', q: 'How do you say “Let us go!”?', options: ['Gehen wir!', 'Wir gehen nicht!', 'Gehe wir!', 'Gehen sie wir!'], a: 0, why: 'Verb first with wir: Gehen wir! (as in Gehen wir ins Kino?)' },
     { k: 'artikel', noun: 'Kantine', a: 'die', why: 'die Kantine — feminine. Plural: die Kantinen.' },
     { k: 'artikel', noun: 'Vorschlag', a: 'der', why: 'der Vorschlag — masculine. Plural: die Vorschläge.' },
-    { k: 'artikel', noun: 'Großvater', a: 'der', why: 'der Großvater — masculine; his wife is die Großmutter.' },
+    { k: 'artikel', noun: 'Großvater', a: 'der', why: 'der Großvater — masculine. Plural: die Großväter. Grandmother: die Großmutter.' },
     { k: 'artikel', noun: 'Großmutter', a: 'die', why: 'die Großmutter — feminine. Plural: die Großmütter.' },
     { k: 'artikel', noun: 'Familienfoto', a: 'das', why: 'das Familienfoto — neuter, like das Foto.' },
     { k: 'fill', q: 'Ich ___ einen Kaffee vor.  (vorschlagen, ich)', a: ['schlage'], why: 'ich schlage … vor; du schlägst … vor.' },
@@ -208,7 +257,9 @@ export const d16: Day = {
     { k: 'mcq', q: 'Im Taxi: Wie viel kostet die Fahrt?', options: ['zwölf Euro', 'zwanzig Euro', 'halb drei Euro', 'zehn Euro'], a: 0, why: 'Das macht zwölf Euro, bitte.' },
     { k: 'mcq', q: 'Im Büro: Die Besprechung ist um halb zehn. Um wie viel Uhr ist das?', options: ['9:30', '10:30', '9:10', '10:00'], a: 0, why: 'halb zehn = half towards ten = 9:30 (Tag 12).' },
     { k: 'order', hi: 'There is a bridge and a tower.', words: ['Es', 'gibt', 'eine', 'Brücke', 'und', 'einen', 'Turm', '.'], a: 'Es gibt eine Brücke und einen Turm .', why: 'es gibt + accusative: eine Brücke, einen Turm.' },
-  ],
+    { k: 'mcq', q: 'Describing a town: which sentence is correct?', options: ['Da ist ein Turm.', 'Da ist einen Turm.', 'Es gibt ein Turm.', 'Da gibt einen Turm.'], a: 0, why: 'After da ist the noun stays nominative (ein Turm); after es gibt it is accusative (einen Turm).' },
+    { k: 'mcq', q: 'There are many cafés.', options: ['Es gibt viele Cafés.', 'Es geben viele Cafés.', 'Es gibst viele Cafés.', 'Es sind gibt viele Cafés.'], a: 0, why: 'es gibt stays singular, even with a plural noun.' },
+    { k: 'mcq', q: 'Im Büro (Sie): Which question is correct?', options: ['Kommen Sie heute zur Besprechung?', 'Kommen Sie heute in der Besprechung?', 'Kommst Sie heute zur Besprechung?', 'Sie kommen heute zur Besprechung kommen?'], a: 0, why: 'Going to a meeting: zur Besprechung (zu + der). With Sie the verb form is kommen.' },  ],
   examTip:
-    'In Sprechen the examiner looks for complete, simple sentences with the verb in the right place. If you do not know a word, ask in German (Was bedeutet …? Noch einmal, bitte.) or use a word you do know; never switch to English or Hindi inside a sentence. Practising one situation a day out loud, as in class, builds that habit.',
+    'Sprechen Teil 2 and Teil 3 (the format is on Tag 10) are short exchanges with a partner, like today’s role-plays. In Teil 3 you make a request from a picture card; a Sie-command with bitte is one good way to do it (Geben Sie mir bitte …, Fahren Sie bitte …). What counts is that you do the task and are understood. If you did not understand your partner, ask in German (Noch einmal, bitte. Was bedeutet …?), and if you do not know a word, use one you do know; do not switch to English or Hindi inside a sentence. Practising one situation a day out loud, as in class, builds that habit.',
 }

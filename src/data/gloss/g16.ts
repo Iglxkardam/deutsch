@@ -14,4 +14,6 @@ export const g16: Record<string, Gloss> = {
   schlage: { en: 'suggest', note: 'vorschlagen · ich: ich schlage … vor' },
   schlägst: { en: 'suggest', note: 'vorschlagen · du' },
   schlägt: { en: 'suggests', note: 'vorschlagen · er / sie / es' },
+  her: { en: '(to) here, towards the speaker', note: 'with movement: Kommen Sie her!' },
+  hierher: { en: '(to) here, over here', note: 'with movement: Kommen Sie hierher!' },
 }

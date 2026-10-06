@@ -192,6 +192,8 @@ export function ClockExplorer() {
       ? { from: 0, to: m * 6, label: 'nach' }
       : t.kind === 'halb'
         ? { from: 0, to: 180, label: 'halb' }
+        : t.kind === 'vorhalb'
+          ? { from: m * 6, to: 180, label: 'vor halb' }
         : t.kind === 'nachhalb'
           ? { from: 180, to: m * 6, label: 'nach halb' }
           : t.kind === 'vor'
@@ -209,13 +211,10 @@ export function ClockExplorer() {
         <ClockFace hour={h} minute={m} size={252} sector={sector} mark={t.target} />
         <div className="rc-legend">
           <span>
-            <i className="rc-dot rc-dot-a" /> right half = <b>nach</b>
+            <i className="rc-dot rc-dot-a" /> shaded = the minutes the phrase counts
           </span>
           <span>
-            <i className="rc-dot rc-dot-b" /> left half = <b>vor</b>
-          </span>
-          <span>
-            <i className="rc-dot rc-dot-c" /> circled hour = the one the phrase names
+            <i className="rc-dot rc-dot-c" /> circled = the hour the phrase names
           </span>
         </div>
       </div>

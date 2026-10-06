@@ -1,0 +1,78 @@
+alles klar?                        old d1      -> d01x1 d04x5 d16x2
+bitte                              old d1      -> d01x1 d02x20 d03x2 d04x27 d07x1 d08x12 d09x24 d10x31 d11x15 d13x4 d14x9 d15x8 d16x10 d17x1
+bitte, ein bisschen langsamer      old d1      -> d04x6
+das verstehe ich nicht             old d1      -> d04x5
+der Dialog                         old d1      -> d10x2 d12x2 d17x3
+die Entschuldigung                 old d1      -> d01x3 d02x3 d04x7 d09x12 d10x13 d12x1 d15x2
+dir                                old d1      -> d01x32 d02x3 d03x1 d08x9 d10x1 d11x2 d15x6
+mein / meine                       old d1      -> d01x25 d02x10 d03x2 d04x3 d05x4 d07x3 d08x1 d12x1 d13x2 d14x3 d15x2 d16x2 d17x5
+mir                                old d1      -> d01x23 d02x1 d08x3 d13x2 d14x2 d15x2 d16x2
+noch einmal, bitte                 old d1      -> d01x1 d02x1 d04x5 d14x1 d16x1
+traurig                            old d1      -> NOT USED ANYWHERE
+wie schreibt man das?              old d1      -> d02x6 d04x3
+atmen                              old d2,4    -> d05x5
+das Bier                           old d2      -> NOT USED ANYWHERE
+das Interview                      old d2      -> NOT USED ANYWHERE
+heute                              old d2      -> d04x1 d05x10 d08x1 d09x3 d10x1 d11x1 d13x3 d14x3 d15x20 d16x3 d17x3
+machen                             old d2      -> d05x6 d06x2 d07x1 d08x2 d10x1 d11x5 d14x4 d15x4 d16x2 d17x3
+oder                               old d2      -> d02x4 d03x2 d04x4 d05x2 d06x2 d08x2 d09x6 d10x4 d11x4 d12x2 d15x24 d17x2
+regnen                             old d2      -> NOT USED ANYWHERE
+sie                                old d2      -> d01x5 d02x161 d03x86 d04x39 d05x102 d06x25 d07x16 d08x11 d09x85 d10x38 d11x34 d12x2 d13x21 d14x18 d15x13 d16x38 d17x6
+trinken                            old d2      -> d09x1 d10x2 d11x13 d15x1 d17x1
+und                                old d2      -> d01x33 d02x26 d03x60 d04x39 d05x34 d06x14 d07x40 d08x26 d09x30 d10x32 d11x39 d12x18 d13x7 d14x16 d15x35 d16x10 d17x15
+Ihr / Ihre                         old d3      -> d02x42 d03x1 d05x50 d11x20 d13x11 d14x8 d17x1
+Jahre alt                          old d3      -> d04x19 d07x3 d08x5
+dein / deine                       old d3      -> d01x6 d02x2 d08x1 d12x1 d17x2
+die Ziffer                         old d3      -> d04x2
+doppel                             old d3      -> d02x4 d04x3
+noch einmal                        old d3      -> d01x1 d02x1 d04x7 d09x1 d13x4 d14x1 d16x1
+aber                               old d4      -> d03x2 d05x3 d06x1 d07x2 d08x1 d09x14 d10x2 d11x3 d15x49 d17x1
+das T-Shirt                        old d4      -> NOT USED ANYWHERE
+der Ball                           old d4      -> d02x1
+der Freund                         old d4      -> d14x4 d15x1 d17x1
+der Kollege                        old d4      -> d17x9
+die Freundin                       old d4      -> d14x2 d17x9
+die Kollegin                       old d4      -> d11x1 d17x2
+halten                             old d4      -> d05x3
+helfen                             old d4      -> d05x1 d11x1 d15x9 d17x6
+ja                                 old d4      -> d04x1 d06x28 d07x12 d08x9 d09x10 d10x10 d11x13 d12x3 d13x7 d14x4 d15x28 d16x5 d17x1
+lustig                             old d4      -> d15x1
+nehmen                             old d4      -> d05x2 d09x8 d11x5 d14x2 d15x2 d17x2
+nein                               old d4      -> d06x31 d07x5 d08x16 d09x20 d11x21 d13x7 d14x1 d15x29 d17x1
+nicht gern                         old d4      -> d05x11 d07x1 d11x2
+raten                              old d4      -> d05x2
+toll                               old d4      -> d02x1 d05x1 d10x1 d13x1 d17x1
+waschen                            old d4      -> d05x3
+werfen                             old d4      -> d05x1
+das Handy                          old d5      -> d04x2 d09x1
+das Kapitel                        old d5      -> d01x2 d02x1 d03x1 d04x1 d05x1 d06x1 d07x1 d08x3 d09x1 d10x1 d11x1 d12x3 d13x4 d14x4 d15x3 d16x1 d17x3
+das Nomen                          old d5      -> d05x1 d07x2 d09x4
+das Wörterbuch                     old d5      -> d06x1
+der Artikel                        old d5      -> d01x5 d02x4 d03x9 d04x6 d05x3 d06x20 d07x13 d08x15 d09x7 d10x9 d11x4 d12x3 d13x7 d14x7 d15x7 d16x5 d17x7
+der Kugelschreiber                 old d5      -> NOT USED ANYWHERE
+der Lieferant                      old d5      -> d06x1
+der Plural                         old d5      -> d01x7 d02x5 d03x13 d04x3 d05x7 d06x13 d07x47 d08x26 d09x16 d10x22 d11x14 d12x6 d13x8 d14x4 d15x3 d16x3 d17x14
+der Singular                       old d5      -> d06x2 d07x3 d10x2 d11x1
+die Lampe                          old d5      -> NOT USED ANYWHERE
+die Lernkarte                      old d5      -> NOT USED ANYWHERE
+die Seite                          old d5      -> d02x4
+neu                                old d5      -> d01x1 d02x3 d06x6 d07x1 d08x5 d13x1 d17x1
+vergleichen                        old d5      -> NOT USED ANYWHERE
+Bis dann!                          old d6      -> NOT USED ANYWHERE
+bis                                old d6      -> d01x29 d02x1 d03x1 d04x3 d06x1 d07x26 d08x3 d09x7 d10x2 d11x5 d12x18 d13x5 d14x5 d15x5 d16x2 d17x9
+die Idee                           old d6      -> d14x1 d15x1
+die Zeit                           old d6      -> d06x2 d07x2 d09x11 d10x1 d11x1 d12x7 d13x10 d14x3 d15x3 d16x8 d17x1
+die Öffnungszeiten                 old d6      -> d10x2 d12x1
+jeder                              old d6      -> d04x1
+montags                            old d6      -> d10x3
+offen                              old d6      -> d06x1 d13x1
+super                              old d6      -> d07x5 d12x1 d13x1 d14x1 d16x1 d17x2
+um                                 old d6      -> d05x3 d06x1 d07x2 d09x3 d10x12 d11x1 d12x59 d13x17 d14x31 d15x13 d16x7 d17x2
+von                                old d6      -> d04x3 d05x1 d07x35 d08x6 d09x6 d11x4 d12x15 d13x3 d14x3 d17x13
+zusammen                           old d6      -> d10x2 d11x2 d12x1 d13x2 d14x4 d15x2 d17x1
+das Komma                          old d7      -> d04x6
+die Währung                        old d7      -> NOT USED ANYWHERE
+moin                               old d8      -> d01x1 d08x9
+die Brille                         old d9      -> d09x2
+die Nachrichten                    old d12     -> d12x10
+vor                                old d12     -> d04x6 d12x74 d14x5 d16x7

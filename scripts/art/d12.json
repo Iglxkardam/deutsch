@@ -1,11 +1,7 @@
 {
   "d12-hero": {
     "ratio": "16:9",
-    "prompt": "A young student with a backpack walking down a charming German old-town street in warm morning light, a tram on the road, a university building and a tall clock tower in the background, long soft shadows."
-  },
-  "d12-time": {
-    "ratio": "16:9",
-    "prompt": "An oversized friendly clock tower on a German town square seen from below, the round clock face has no numerals, tiny people and a café with striped awning at its feet, late afternoon golden light."
+    "prompt": "A young student with a backpack walking down a charming German old-town street in warm morning light, a tram on the road, a university building and a tall clock tower with a plain clock face without numerals in the background, long soft shadows."
   },
   "d12-routine": {
     "ratio": "16:9",

@@ -9,7 +9,7 @@ const HOUR = ['', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'a
 export const MINUTE_STEPS = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55] as const
 
 export type PartRole = 'min' | 'link' | 'hour'
-export type TimeKind = 'full' | 'nach' | 'halb' | 'nachhalb' | 'vor'
+export type TimeKind = 'full' | 'nach' | 'vorhalb' | 'halb' | 'nachhalb' | 'vor'
 
 export interface InformalTime {
   phrase: string
@@ -49,7 +49,8 @@ export function informalTime(h: number, m: number): InformalTime {
     case 20:
       return build('nach', h, [p('zwanzig', 'min'), p('nach', 'link'), p(hw, 'hour')], `20 minutes past ${h}.`)
     case 25:
-      return build('nach', h, [p('fünfundzwanzig', 'min'), p('nach', 'link'), p(hw, 'hour')], `25 minutes past ${h}.`)
+      // the usual spoken form (Kursbuch p.56); "fünfundzwanzig nach X" is also correct but less common
+      return build('vorhalb', n, [p('fünf', 'min'), p('vor', 'link'), p('halb', 'link'), p(nw, 'hour')], `5 minutes before half-way to ${n} (${h}:25). Also heard: fünfundzwanzig nach ${hw}.`)
     case 30:
       return build('halb', n, [p('halb', 'link'), p(nw, 'hour')], `Half-way TO ${n} — so it is ${h}:30, not ${n}:30.`)
     case 35:

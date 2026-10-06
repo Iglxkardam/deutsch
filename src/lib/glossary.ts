@@ -836,10 +836,14 @@ const EXTRA: Record<string, Gloss> = {
 /** Course vocabulary is authoritative; EXTRA fills the gaps around it. */
 function buildIndex(): Map<string, Gloss> {
   const map = new Map<string, Gloss>()
+  // Capital-letter forms that differ in meaning from their lower-case twin (Sie / sie, Ihr / ihr):
+  // matched case-sensitively first, so a mid-sentence "Sie" is the formal you and "sie" is she/they.
+  EXACT = new Map<string, Gloss>()
 
   for (const [k, v] of Object.entries(EXTRA)) map.set(k, v)
   // per-day additions never override a hand-checked EXTRA entry
   for (const [k, v] of Object.entries(DAY_GLOSS)) if (!map.has(k)) map.set(k, v)
+  const handKeys = new Set(map.keys())
 
   for (const v of [...ALL_VOCAB, ...DOMAIN_VOCAB]) {
     const article = v.de.match(/^(der|die|das)\s+/i)?.[1]
@@ -851,6 +855,13 @@ function buildIndex(): Map<string, Gloss> {
       const key = f.toLowerCase()
       // never let a multi-word phrase overwrite a precise single-word entry
       if (map.has(key) && f.includes(' ')) continue
+      const hand = map.get(key)
+      if (hand && handKeys.has(key) && !f.includes(' ') && f !== key && !EXACT.has(f)) {
+        // the lower-case twin was hand-checked and means something else: keep it for the lower-case form
+        // and give the capitalised form its own meaning (a sentence-initial capital stays ambiguous, so say so)
+        EXACT.set(f, { en: `${v.en} (at the start of a sentence also: ${hand.en})`, note })
+        continue
+      }
       map.set(key, { en: v.en, note })
     }
 
@@ -866,17 +877,24 @@ function buildIndex(): Map<string, Gloss> {
     }
   }
 
+  if (!EXACT.has('Ihr'))
+    EXACT.set('Ihr', {
+      en: 'your (formal, e.g. Ihr Name) (at the start of a sentence also: ihr = you, plural)',
+      note: 'possessive of Sie',
+    })
+
   return map
 }
 
 let index: Map<string, Gloss> | null = null
+let EXACT = new Map<string, Gloss>()
 
 /** Look up one surface form. Returns null when we are not sure — never a guess. */
 export function lookup(raw: string): Gloss | null {
   if (!index) index = buildIndex()
   const word = raw.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '')
   if (word.length < 2) return null
-  return index.get(word.toLowerCase()) ?? null
+  return EXACT.get(word) ?? index.get(word.toLowerCase()) ?? null
 }
 
 export function hasGloss(raw: string): boolean {

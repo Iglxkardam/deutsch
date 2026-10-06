@@ -9,3 +9,5 @@ small
 talk
 okay
 köln
+pohl
+español

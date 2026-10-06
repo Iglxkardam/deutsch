@@ -63,4 +63,9 @@ export const g14: Record<string, Gloss> = {
   freund: { en: 'friend (male), boyfriend', note: 'der Freund' },
   freundin: { en: 'friend (female), girlfriend', note: 'die Freundin' },
   idee: { en: 'idea', note: 'die Idee' },
+  herzliche: { en: 'warm, cordial', note: 'herzlich, declined: Herzliche Grüße = warm regards' },
+  herzlich: { en: 'warmly, cordially', note: 'Ich lade dich herzlich ein.' },
+  damen: { en: 'ladies', note: 'plural of die Dame: Sehr geehrte Damen und Herren' },
+  herren: { en: 'gentlemen', note: 'plural of der Herr' },
+  redemittel: { en: 'useful phrases', note: 'das Redemittel, plural die Redemittel' },
 }

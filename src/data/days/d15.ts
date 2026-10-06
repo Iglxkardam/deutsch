@@ -5,7 +5,7 @@ export const d15: Day = {
   kapitel: 7,
   title: 'Arbeitsalltag: ja, nein, doch und und, oder, aber',
   goal: 'Describe small workplace actions, answer yes/no questions with ja, nein and doch, and join sentences with und, oder and aber',
-  focus: 'Arbeitsalltag · Small Talk im Büro · Antworten mit ja, nein, doch · Sätze verbinden: und, oder, aber',
+  focus: 'Arbeitsalltag · Gespräche im Alltag · Antworten mit ja, nein, doch · Sätze verbinden: und, oder, aber',
   minutes: 60,
   examSkill: 'Lesen',
   look: 'rich',
@@ -14,7 +14,7 @@ export const d15: Day = {
     { t: 'h', text: '1 · Kapitel 7: Arbeitsalltag' },
     {
       t: 'p',
-      text: 'Kapitel 7 is called **Arbeitsalltag**: **die Arbeit** (work) and **der Alltag** (everyday routine) together. You will describe what happens in a working day, have small talk with colleagues, and join sentences. The first task was a series of photos of **Adnan** at work: **Was macht Adnan auf den Fotos?** (What is Adnan doing in the photos?) Each answer uses a separable verb from **Tag 14**.',
+      text: 'Kapitel 7 is called **Arbeitsalltag**: **die Arbeit** (work) and **der Alltag** (everyday routine) together. You will describe what happens in a working day, have small talk with colleagues, and join sentences.\n\nThe first task was a series of photos of **Adnan** at work: **Was macht Adnan auf den Fotos?** (What is Adnan doing in the photos?)\n\nTwo of the answers use a separable verb from **Tag 14**:\n\n- **mitnehmen**, **annehmen**: separable\n- **helfen**, **grüßen** and **bringen**: not separable',
     },
     {
       t: 'ex',
@@ -22,19 +22,19 @@ export const d15: Day = {
         { de: 'Adnan nimmt einen Kaffee mit.', hi: 'Adnan takes a coffee with him.' },
         { de: 'Er hilft beim Ticketkauf.', hi: 'He helps with buying the ticket.' },
         { de: 'Er nimmt ein Paket an.', hi: 'He accepts a parcel.' },
-        { de: 'Er grüßt einen Kollegen.', hi: 'He greets a colleague.' },
+        { de: 'Er grüßt eine Kollegin.', hi: 'He greets a (female) colleague.' },
         { de: 'Er bringt das Kind in den Kindergarten.', hi: 'He takes the child to nursery.' },
       ],
     },
     {
       t: 'tip',
-      text: '**nehmen** and **helfen** change their vowel: **er nimmt … mit / an**, **er hilft** (e→i, as on Tag 5). **bringen** means “to bring” and also “to take someone/something somewhere”. **grüßen** (to greet) is not separable, and it takes an accusative object: *Er grüßt einen Kollegen.* **helfen** takes the dative (**Tag 17**), so we say **beim** Ticketkauf (bei + dem).',
+      text: 'Small points about the photo task:\n\n- **nehmen** and **helfen** change their vowel (e→i, as on Tag 5): **er nimmt … mit / an**, **er hilft**\n- **bringen** means “to bring” and also “to take someone/something somewhere”\n- **grüßen** (to greet) takes an accusative object: “Er grüßt eine Kollegin” (the book’s photo)\n- with a man: “Er grüßt einen Kollegen”, because **der Kollege** adds **-n** in the accusative\n- **beim** Ticketkauf is **bei + dem**: the preposition **bei** takes the dative (**Tag 17**)',
     },
 
-    { t: 'h', text: '2 · Small Talk im Büro' },
+    { t: 'h', text: '2 · Gespräche im Alltag' },
     {
       t: 'table',
-      caption: 'Kleine Gespräche im Büro',
+      caption: 'Kleine Gespräche im Alltag',
       head: ['Situation', 'Satz', 'English'],
       rows: [
         ['Kaffee anbieten', 'Möchtest du auch einen Kaffee?', 'Would you like a coffee too?'],
@@ -63,14 +63,18 @@ export const d15: Day = {
     },
     {
       t: 'tip',
-      text: 'Reply to **Möchtest du auch einen Kaffee?** with **Ja, gerne.** or **Nein, danke.** Not with **Alles gut**: that answers **Wie geht’s?** Check what the question asks before you pick the answer; this is exactly the task in the listening exercise where the dialogue lines must be matched to the pictures.',
+      text: 'Check what the question asks before you pick the answer.\n\n- Reply to **Möchtest du auch einen Kaffee?** with **Ja, gerne.** or **Nein, danke.**\n- Not with **Alles gut**: that answers **Wie geht’s?**\n- This is exactly the trap in the Übungsbuch task (p. 86, 1b), where you fill the dialogue gaps from a box of phrases (**Alles gut, Ja, gern, Kein Problem, Das ist nett …**).',
+    },
+    {
+      t: 'tip',
+      text: 'Colleagues who know each other say **du**; to a stranger at the ticket machine or a neighbour you say **Sie**.',
     },
 
     { t: 'h', text: '3 · Ja, nein oder doch?' },
     {
       t: 'rule',
       title: 'Regel — doch answers a negative question with “yes”',
-      body: 'After a **positive question** (*Hast du einen Kuli?*) say **ja** for yes and **nein** for no. After a **negative question** (with **nicht, kein, keine …**) the answer **nein** agrees with the negative (“No, I do not”), while **doch** says the opposite (“Yes, I do / it is so”). **doch** is the answer to a negative question when the answer is positive. **ja** would be unclear there.',
+      body: 'The right answer word depends on whether the question is positive or negative.\n\n- after a **positive question** (Hast du einen Kuli?): **ja** for yes, **nein** for no\n- after a **negative question** (with **nicht, kein, keine …**): **nein** agrees with the negative (“No, I do not”)\n- **doch** says the opposite (“Yes, I do / it is so”): it is the answer to a negative question when the answer is positive\n- **ja** would be unclear there',
     },
     {
       t: 'table',
@@ -104,13 +108,17 @@ export const d15: Day = {
     },
     {
       t: 'tip',
-      text: 'Quick test: look for **nicht** or **kein-** in the **question**. No negative word: answer **ja** or **nein**. Negative word and you mean “yes, it is so”: **doch**. Negative word and you agree with the negative: **nein**.',
+      text: 'Quick test: look for **nicht** or **kein-** in the question.\n\n- no negative word: answer **ja** or **nein**\n- negative word and you mean “yes, it is so”: **doch**\n- negative word and you agree with the negative: **nein**\n\n**doch** also contradicts a negative statement:',
+    },
+    {
+      t: 'ex',
+      items: [{ de: 'Du hast keine Zeit. — Doch, ich habe Zeit!', hi: 'You have no time. — Yes, I do.' }],
     },
 
     { t: 'h', text: '4 · Sätze verbinden: und, oder, aber' },
     {
       t: 'p',
-      text: 'Three small words join two words or two sentences: **und** (and), **oder** (or) and **aber** (but). They do **not** change the word order: each part keeps the verb in **position 2**. **oder** means “or”; it has nothing to do with the English word “order”.',
+      text: 'Three small words join two words or two sentences: **und** (and), **oder** (or) and **aber** (but).\n\nThey do **not** change the word order and do not count as a position:\n\n- each part keeps its normal order, with the verb in **position 2**\n- if the same subject is left out after **und / oder**, the verb simply comes right after the joining word\n- **oder** means “or”; it has nothing to do with the English word “order”',
     },
     {
       t: 'sentence',
@@ -124,7 +132,7 @@ export const d15: Day = {
     {
       t: 'rule',
       title: 'Regel — same subject: leave it out. Different subject: name it.',
-      body: 'If both parts have the **same subject**, you can leave it out after **und / oder / aber** (*Ich esse einen Hamburger und trinke keinen Kaffee*). If the subject **changes**, name it (*… und Raya trinkt …*). Put a **comma before aber** (*Ich habe einen Termin, aber ich muss arbeiten*). Before **und** and **oder** no comma is needed.',
+      body: 'Name the subject only when it changes; put a comma before **aber**.\n\n- **same subject** in both parts: you can leave it out after **und / oder / aber** (“Ich esse einen Hamburger und trinke keinen Kaffee”)\n- subject **changes**: name it (“… und Raya trinkt …”)\n- **comma before aber** (“Ich habe einen Termin, aber ich muss arbeiten”)\n- before **und** and **oder** no comma is needed',
     },
     {
       t: 'ex',
@@ -148,24 +156,27 @@ export const d15: Day = {
     },
     {
       t: 'tip',
-      text: 'Class advice for sentence practice: use **present tense** and vocabulary you know. If you look a word up, check only its **meaning**; do not copy past-tense forms from a translator. The two past forms you know so far are **war** and **hatte** (Tag 13); all other past forms come later.',
+      text: 'Class advice for sentence practice:\n\n- use **present tense** and vocabulary you know\n- if you look a word up, check only its meaning; do not copy past-tense forms from a translator\n- the two past forms you know so far are **war** and **hatte** (Tag 13); all other past forms come later',
     },
 
     { t: 'h', text: '5 · Mein Praktikum' },
     {
       t: 'p',
-      text: 'Reading practice: Laura writes about her internship (**das Praktikum**) in Köln. The text below is **our own version** with the same ideas as the Übungsbuch text and the same new words; it is not the book’s exact wording. Read it once, then answer the true/false questions in the exercises.',
+      text: 'Reading practice: Laura writes about her internship (**das Praktikum**) in Köln.\n\n- The blog is in the **Kursbuch (p. 82, 2a)**.\n- The true/false statements the class marked are in the **Übungsbuch (p. 87, 2b)**.\n\nBelow is a **shortened version** with the same facts; it is not the book’s full text. Read it once, then answer the true/false questions in the exercises.',
     },
     {
       t: 'ex',
       items: [
         { de: 'Endlich bin ich in Köln und mache hier ein Praktikum.', hi: 'At last I am in Cologne and doing an internship here.' },
-        { de: 'Das Leben ist ganz anders als in Sevilla, und das Wetter auch.', hi: 'Life is completely different from Seville, and so is the weather.' },
+        { de: 'Das Leben ist ganz anders als in Sevilla und das Wetter auch.', hi: 'Life is completely different from Seville, and so is the weather.' },
         { de: 'Die Firma ist klein, aber es ist immer viel los.', hi: 'The company is small, but there is always a lot going on.' },
         { de: 'Ich muss schon um halb acht da sein. Das ist nicht leicht für mich.', hi: 'I have to be there by half past seven already. That is not easy for me.' },
-        { de: 'Um zehn trinken meine Kollegen und ich zusammen Kaffee, oder ich mache allein Pause.', hi: 'At ten my colleagues and I drink coffee together, or I take a break alone.' },
+        { de: 'Um zehn trinken meine Kollegen und ich zusammen Kaffee oder ich mache allein Pause.', hi: 'At ten my colleagues and I drink coffee together, or I take a break alone.' },
         { de: 'Am Vormittag haben wir oft Besprechungen. Sie sind interessant und meistens auch lustig.', hi: 'In the morning we often have meetings. They are interesting and mostly funny too.' },
-        { de: 'Am Wochenende treffe ich Freunde: Wir sehen Filme, singen Lieder oder kochen zusammen.', hi: 'At the weekend I meet friends: we watch films, sing songs or cook together.' },
+        { de: 'Meine Chefin und meine Kollegen sind sehr nett und erklären viel, aber manchmal haben sie keine Zeit für meine Fragen.', hi: 'My boss and my colleagues are very nice and explain a lot, but sometimes they have no time for my questions.' },
+        { de: 'Ich telefoniere mit Kunden oder arbeite am Computer. Meine Chefin nimmt mich auch zu Kunden mit.', hi: 'I phone customers or work on the computer. My boss also takes me along to customers.' },
+        { de: 'Am Wochenende gehe ich in den Club Español. Dort sprechen wir Deutsch und Spanisch.', hi: 'At the weekend I go to the Club Español. There we speak German and Spanish.' },
+        { de: 'Wir sehen zusammen Filme, singen Lieder oder kochen zusammen.', hi: 'We watch films together, sing songs or cook together.' },
         { de: 'Ich möchte noch ganz lange hier in Köln bleiben.', hi: 'I would like to stay here in Cologne for a long time yet.' },
       ],
     },
@@ -186,10 +197,10 @@ export const d15: Day = {
     { de: 'grüßen', hi: 'अभिवादन करना', en: 'to greet', type: 'verb', ex: 'Er grüßt einen Kollegen.', exHi: 'He greets a colleague.' },
     { de: 'bleiben', hi: 'रुकना, ठहरना', en: 'to stay, to remain', type: 'verb', forms: 'ich bleibe · du bleibst · er bleibt', ex: 'Ich möchte noch lange hier bleiben.', exHi: 'I would like to stay here for a long time.' },
     { de: 'anders', hi: 'अलग', en: 'different, differently', type: 'adv', ex: 'Das Leben ist ganz anders.', exHi: 'Life is completely different.' },
-    { de: 'leicht', hi: 'आसान', en: 'easy, light', type: 'adj', ex: 'Das ist nicht leicht für mich.', exHi: 'That is not easy for me.' },
+    { de: 'leicht', hi: 'आसान, हल्का', en: 'easy, light', type: 'adj', ex: 'Das ist nicht leicht für mich.', exHi: 'That is not easy for me.' },
     { de: 'schwierig', hi: 'मुश्किल', en: 'difficult', type: 'adj', ex: 'Deutsch ist ein bisschen schwierig.', exHi: 'German is a little difficult.' },
     { de: 'hungrig', hi: 'भूखा', en: 'hungry', type: 'adj', ex: 'Ich bin müde und hungrig.', exHi: 'I am tired and hungry.' },
-    { de: 'allein', hi: 'अकेला', en: 'alone', type: 'adv', ex: 'Ich mache allein Pause.', exHi: 'I take a break alone.' },
+    { de: 'allein', hi: 'अकेले, अकेला', en: 'alone', type: 'adv', ex: 'Ich mache allein Pause.', exHi: 'I take a break alone.' },
     { de: 'endlich', hi: 'आख़िरकार', en: 'finally, at last', type: 'adv', ex: 'Endlich bin ich in Köln.', exHi: 'At last I am in Cologne.' },
     { de: 'viel los', hi: 'बहुत कुछ हो रहा है', en: 'a lot going on', type: 'phrase', ex: 'Es ist immer viel los.', exHi: 'There is always a lot going on.' },
     { de: 'Was ist los?', hi: 'क्या हुआ?', en: 'What is the matter?', type: 'phrase', ex: 'Du bist so still. Was ist los?', exHi: 'You are so quiet. What is the matter?' },
@@ -203,7 +214,7 @@ export const d15: Day = {
       { who: 'Laura', de: 'Danke, gut. Und dir?', hi: 'Fine, thanks. And you?' },
       { who: 'Adnan', de: 'Auch alles gut. Möchtest du einen Kaffee?', hi: 'All good too. Would you like a coffee?' },
       { who: 'Laura', de: 'Ja, gerne. Haben wir heute keinen Termin?', hi: 'Yes, gladly. Do we not have an appointment today?' },
-      { who: 'Adnan', de: 'Doch, um drei bei der Firma Paul.', hi: 'Yes we do, at three at the Paul company.' },
+      { who: 'Adnan', de: 'Doch, um drei bei der Firma Pohl.', hi: 'Yes we do, at three at the Pohl company.' },
       { who: 'Laura', de: 'Ach ja, stimmt. Dann bis später!', hi: 'Oh yes, that is right. See you later then!' },
       { who: 'Adnan', de: 'Bis dann, ich hole dich ab.', hi: 'See you then, I will pick you up.' },
     ],
@@ -216,16 +227,16 @@ export const d15: Day = {
     { k: 'mcq', q: 'Hast du heute noch keinen Termin? — Ja, um drei. Is this the best answer?', options: ['No, it should be Doch, um drei.', 'Yes, ja is always right.', 'No, it should be Nein, um drei.', 'Yes, because there is a time.'], a: 0, why: 'The question is negative (keinen) and the answer is positive, so doch.' },
     { k: 'mcq', q: 'Kannst du Laura nicht helfen? — Nein, ich habe keine Zeit. What does the answer mean?', options: ['No, I cannot, I have no time.', 'Yes, I can help.', 'I do not know.', 'Laura has no time.'], a: 0, why: 'nein agrees with the negative question: I cannot help.' },
     { k: 'mcq', q: 'Gibt es morgen keinen Unterricht? You want to say: yes, there is a class.', options: ['Doch, es gibt Unterricht.', 'Ja, es gibt Unterricht.', 'Nein, es gibt Unterricht.', 'Auch, es gibt Unterricht.'], a: 0, why: 'doch answers a negative question positively.' },
-    { k: 'mcq', q: 'Which word means “but”?', options: ['aber', 'oder', 'und', 'doch'], a: 0, why: 'aber = but; oder = or; und = and.' },
+    { k: 'mcq', q: 'Which word means “but”?', options: ['aber', 'oder', 'und', 'auch'], a: 0, why: 'aber = but; oder = or; und = and.' },
     { k: 'mcq', q: 'Which word means “or”?', options: ['oder', 'aber', 'und', 'auch'], a: 0, why: 'oder = or (not “order”).' },
     { k: 'fill', q: 'Ich bin müde ___ hungrig.  (and)', a: ['und'], why: 'und joins two words.' },
     { k: 'fill', q: 'Möchtest du Tee ___ Kaffee?  (or)', a: ['oder'], why: 'oder offers a choice.' },
     { k: 'fill', q: 'Die Pizza ist lecker, ___ ich bin satt.  (but)', a: ['aber'], why: 'aber shows a contrast.' },
-    { k: 'order', hi: 'I like coffee, but today I am drinking tea.', words: ['Ich', 'mag', 'Kaffee', ',', 'aber', 'heute', 'trinke', 'ich', 'Tee', '.'], a: 'Ich mag Kaffee , aber heute trinke ich Tee .', why: 'After aber, heute is position 1 and the verb trinke stays second.' },
+    { k: 'order', hi: 'I like coffee, but today I am drinking tea. (Put heute straight after aber.)', words: ['Ich', 'mag', 'Kaffee', ',', 'aber', 'heute', 'trinke', 'ich', 'Tee', '.'], a: 'Ich mag Kaffee , aber heute trinke ich Tee .', why: 'After aber, heute is position 1 and the verb trinke stays second. (… aber ich trinke heute Tee is also correct German, but the task asks for heute first.)' },
     { k: 'order', hi: 'I would like to take a break, but I have to work.', words: ['Ich', 'möchte', 'eine', 'Pause', 'machen', ',', 'aber', 'ich', 'muss', 'arbeiten', '.'], a: 'Ich möchte eine Pause machen , aber ich muss arbeiten .', why: 'Two main clauses joined by aber, each with the modal verb in position 2.' },
     { k: 'order', hi: 'Are you learning German or French?', words: ['Lernst', 'du', 'Deutsch', 'oder', 'Französisch', '?'], a: 'Lernst du Deutsch oder Französisch ?', why: 'Yes/no-style question with oder between the two choices.' },
     { k: 'order', hi: 'The pizza is tasty, but I am full.', words: ['Die', 'Pizza', 'ist', 'lecker', ',', 'aber', 'ich', 'bin', 'satt', '.'], a: 'Die Pizza ist lecker , aber ich bin satt .', why: 'Comma before aber; the second clause starts with ich bin.' },
-    { k: 'mcq', q: 'Which sentence joins the two parts correctly?', options: ['Ich esse einen Hamburger und trinke Wasser.', 'Ich esse einen Hamburger und Wasser trinke.', 'Ich esse und einen Hamburger trinke Wasser.', 'Ich esse einen Hamburger und ich Wasser trinke.'], a: 0, why: 'Same subject: ich is not repeated, and trinke is in position 2 of its part.' },
+    { k: 'mcq', q: 'Which sentence joins the two parts correctly?', options: ['Ich esse einen Hamburger und trinke Wasser.', 'Ich esse einen Hamburger und Wasser trinke.', 'Ich esse und einen Hamburger trinke Wasser.', 'Ich esse einen Hamburger und ich Wasser trinke.'], a: 0, why: 'Same subject, so ich is left out; trinke keeps its normal place before the object (as in ich trinke Wasser) and does not go to the end.' },
     { k: 'mcq', q: 'Which sentence has the right word order after aber?', options: ['Ich mag Fußball, aber heute spiele ich nicht.', 'Ich mag Fußball, aber heute ich spiele nicht.', 'Ich mag Fußball aber, heute spiele ich nicht.', 'Ich mag Fußball, aber nicht heute ich spiele.'], a: 0, why: 'heute is position 1 after aber; the verb spiele is position 2; the subject ich follows it.' },
     { k: 'mcq', q: 'Was macht Adnan? — Er ___ ein Paket an.', options: ['nimmt', 'nehmt', 'nehme', 'nimmst'], a: 0, why: 'nehmen: er nimmt. The prefix an is at the end.' },
     { k: 'fill', q: 'Er ___ beim Ticketkauf.  (helfen, er)', a: ['hilft'], why: 'helfen changes e to i: er hilft.' },
@@ -242,10 +253,14 @@ export const d15: Day = {
     { k: 'mcq', q: 'Lesetext: Die Firma ist klein, aber es ist immer viel los. Aussage: In der Firma ist nie etwas los.', options: ['Richtig', 'Falsch'], a: 1, why: 'It is always busy: immer viel los.' },
     { k: 'mcq', q: 'Lesetext: Laura muss schon um halb acht da sein. Um wie viel Uhr ist das?', options: ['7:30', '8:30', '6:30', '8:00'], a: 0, why: 'halb acht = 7:30 (Tag 12).' },
     { k: 'mcq', q: 'Lesetext: Wann haben Laura und die Kollegen oft Besprechungen?', options: ['am Vormittag', 'am Abend', 'am Wochenende', 'nachts'], a: 0, why: 'Am Vormittag haben wir oft Besprechungen.' },
+    { k: 'mcq', q: 'Lauras Blog, Aussage: Sie kommt spät ins Büro.', options: ['Richtig', 'Falsch'], a: 1, why: 'She has to be there already at halb acht (7:30): schon um halb acht.' },
+    { k: 'mcq', q: 'Lauras Blog, Aussage: Die Chefin hilft Laura immer.', options: ['Richtig', 'Falsch'], a: 1, why: 'The boss and colleagues explain a lot, aber manchmal haben sie keine Zeit: not always.' },
+    { k: 'mcq', q: 'Lauras Blog, Aussage: Sie spricht im Club auch Spanisch.', options: ['Richtig', 'Falsch'], a: 0, why: 'Im Club Español sprechen sie Deutsch und Spanisch.' },
+    { k: 'mcq', q: 'Lauras Blog, Aussage: Sie möchte wieder nach Hause.', options: ['Richtig', 'Falsch'], a: 1, why: 'She wants to stay: Ich möchte noch ganz lange hier in Köln bleiben.' },
     { k: 'listen', text: 'Die Firma ist klein, aber es ist immer viel los.', a: ['Die Firma ist klein, aber es ist immer viel los.', 'Die Firma ist klein, aber es ist immer viel los'], why: 'Diktat: comma before aber.' },
     { k: 'listen', text: 'Haben Sie keinen Zucker? Doch, hier bitte.', a: ['Haben Sie keinen Zucker? Doch, hier bitte.', 'Haben Sie keinen Zucker? Doch, hier bitte'], why: 'Diktat: question and answer with doch.' },
     { k: 'mcq', q: 'Möchtest du auch einen Kaffee? Which answer fits?', options: ['Ja, gerne.', 'Alles gut.', 'Bis später.', 'Ich bin müde.'], a: 0, why: 'Ja, gerne accepts the offer; Alles gut answers Wie geht’s?' },
   ],
   examTip:
-    'In Lesen and Hören you decide whether a statement matches what is said, so watch the small words: a negative question answered with doch means yes (it is so), answered with nein it means no. In Schreiben, joining two short sentences with und or aber lets you say more without extra mistakes, as long as the verb stays in position 2.',
+    'In Lesen Teil 1 and 3 and in Hören Teil 2 you mark statements Richtig or Falsch, so watch the small words (nicht, kein, aber, oder): a negative question answered with doch means yes (it is so), answered with nein it means no. In Schreiben, joining two short sentences with und or aber lets you say more without extra mistakes, as long as the verb stays in position 2.',
 }

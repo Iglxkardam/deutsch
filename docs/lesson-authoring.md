@@ -111,6 +111,14 @@ Visual blocks (rich Days only — use them where they teach):
 
 ## 6. Writing rules
 
+**Readability is a requirement, not a nicety. The learner must be able to scan a rule in seconds — no essays.**
+
+- A paragraph is at most ~2 short sentences (about 220 characters). Blank line = new paragraph. Lines starting with `- ` make a bullet list (consecutive lines form one list); this works inside `p`, `rule`, `tip` and `warn` text.
+- A `rule` is: one short lead sentence (the rule itself) + either 2–5 bullets (one fact each: an exception, a condition, a contrast) **or** a table/`conj`/`nouns`/`sentence` block placed right after it. Never a wall of prose.
+- Anything with a **paradigm** (articles per gender, verb endings, plural patterns, time words, prepositions + case) goes in a table, `conj`, `nouns` or `sentence` block — never described in a sentence.
+- Bold only the German term being taught, never whole phrases and never more than ~3 per sentence. Put examples in `ex` blocks (or `compare`), not inline in running prose — at most one tiny inline example per bullet.
+- Keep every exception and every "only/not/always/usually" qualifier — shortening must not change the claim.
+
 - **English explanations, German examples.** Headings and table captions are German **only** (so every word is hoverable). Rule titles may be `Regel — English headline`.
 - Do not write "always"/"never" unless it is true in standard German. State exceptions.
 - No emoji anywhere. No filler ("Great job!"). Short paragraphs; lead with the example.
@@ -139,7 +147,7 @@ export const g05: Record<string, Gloss> = {
 }
 ```
 
-Keys lower-case. Be certain of every meaning. Names of people/cities/companies go in `scripts/audit-names.txt` instead. `node scripts/audit-notes.mjs --day=N` lists the words that would show no tooltip.
+Keys lower-case. Be certain of every meaning. Names of people/cities/companies go (one per line, lower-case) in your own `scripts/audit-names.d/dNN.txt` instead. `node scripts/audit-notes.mjs --day=N` lists the words that would show no tooltip.
 
 ## 9. Checks you must run (and what "done" means)
 

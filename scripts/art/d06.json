@@ -1,0 +1,10 @@
+{
+  "d06-hero": {
+    "ratio": "16:9",
+    "prompt": "A wide single landscape of a German old-town square and lake edge shown across the seasons from left to right: spring cherry blossom on the left, a summer lake with a swimmer and a bicycle in the middle-left, autumn trees in the middle-right, a snowy street with a harbour crane on the right; one continuous rectangular panorama filling the whole frame, not circular, no frame, no signs, no lettering."
+  },
+  "d06-artikel": {
+    "ratio": "16:9",
+    "prompt": "A friendly busy street scene seen from the front: a university building with students on benches and a laptop, a hospital building with an ambulance in front, a restaurant with a striped awning and a waiter, a cream-coloured German taxi at the curb with its driver, soft light, no signs with text."
+  }
+}

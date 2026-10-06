@@ -1,0 +1,87 @@
+/* ── Day pages, outside the notes: dialogue bubbles, course cards ─────────
+   Same restrained palette as rich.css. Speaker / week colours are set per
+   element through --c so light and dark both work.                         */
+
+/* ── dialogue ──────────────────────────────────────────────────────────── */
+.dlg {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 22px; padding: 26px 28px 30px;
+  box-shadow: var(--shadow-sm), 0 12px 32px rgba(35, 33, 30, 0.05);
+}
+.dlg-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+.dlg-title { font-size: 23px; font-weight: 780; letter-spacing: -0.02em; line-height: 1.2; }
+.dlg-sit { font-size: 14.5px; color: var(--ink-3); margin-top: 4px; max-width: 56ch; line-height: 1.5; }
+.dlg-cast { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+
+.dlg-s0 { --c: #3D63AE; }
+.dlg-s1 { --c: #D2603A; }
+.dlg-s2 { --c: #2C8480; }
+.dlg-s3 { --c: #85579F; }
+[data-theme='dark'] .dlg-s0 { --c: #8FAEE8; }
+[data-theme='dark'] .dlg-s1 { --c: #EE8A66; }
+[data-theme='dark'] .dlg-s2 { --c: #5FC2BC; }
+[data-theme='dark'] .dlg-s3 { --c: #C09AD6; }
+
+.dlg-chip {
+  display: inline-flex; align-items: center; gap: 7px; padding: 3px 12px 3px 4px; border-radius: 999px;
+  font-size: 13px; font-weight: 650; color: var(--c);
+  background: color-mix(in srgb, var(--c) 10%, var(--paper)); border: 1px solid color-mix(in srgb, var(--c) 28%, transparent);
+}
+.dlg-chip i { font-style: normal; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; font-size: 11.5px; font-weight: 750; }
+
+.dlg-thread { display: flex; flex-direction: column; gap: 14px; }
+.dlg-row { display: flex; align-items: flex-end; gap: 10px; max-width: 86%; }
+.dlg-right { flex-direction: row-reverse; align-self: flex-end; }
+.dlg-av {
+  flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--c); color: #fff; font-weight: 750; font-size: 14px;
+}
+.dlg-bubble {
+  position: relative; padding: 11px 16px 12px; border-radius: 18px 18px 18px 5px; min-width: 0;
+  background: color-mix(in srgb, var(--c) 9%, var(--paper)); border: 1px solid color-mix(in srgb, var(--c) 26%, transparent);
+}
+.dlg-right .dlg-bubble { border-radius: 18px 18px 5px 18px; }
+.dlg-who { font-size: 11px; font-weight: 750; letter-spacing: 0.07em; text-transform: uppercase; color: var(--c); margin-bottom: 2px; }
+.dlg-de { font-family: var(--font-read); font-size: 18px; font-weight: 600; line-height: 1.4; }
+.dlg-en { font-size: 13.5px; color: var(--ink-3); margin-top: 3px; line-height: 1.45; }
+@media (max-width: 640px) {
+  .dlg { padding: 18px 14px 22px; border-radius: 18px; }
+  .dlg-row { max-width: 100%; }
+}
+
+/* ── course day cards ──────────────────────────────────────────────────── */
+.dc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); gap: 18px; }
+.dc {
+  --c: var(--blue);
+  display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; overflow: hidden;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-mid) var(--ease-out), box-shadow var(--t-mid) var(--ease-out), border-color var(--t-fast);
+}
+.dc:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: color-mix(in srgb, var(--c) 45%, transparent); }
+.dc-art {
+  position: relative; aspect-ratio: 16 / 9; overflow: hidden;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--c) 22%, var(--paper)), color-mix(in srgb, var(--c) 8%, var(--paper-2)));
+}
+.dc-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 600ms var(--ease-out); }
+.dc:hover .dc-art img { transform: scale(1.04); }
+.dc-art-n { position: absolute; left: 14px; bottom: 6px; font-size: 64px; font-weight: 800; letter-spacing: -0.05em; line-height: 1; color: color-mix(in srgb, var(--c) 30%, transparent); }
+.dc-badge {
+  position: absolute; top: 12px; left: 12px; z-index: 1; padding: 4px 11px 5px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase;
+  background: var(--paper); color: var(--ink); box-shadow: 0 2px 10px rgba(35, 33, 30, 0.16);
+}
+.dc-state {
+  position: absolute; top: 12px; right: 12px; z-index: 1; padding: 4px 10px 5px; border-radius: 999px; font-size: 11.5px; font-weight: 700;
+  background: color-mix(in srgb, var(--paper) 88%, transparent); color: var(--ink-2); backdrop-filter: blur(6px);
+}
+.dc-done .dc-state { background: var(--green); color: #fff; }
+.dc-body { display: flex; flex-direction: column; gap: 7px; padding: 14px 18px 16px; flex: 1; }
+.dc-title { font-size: 17px; font-weight: 760; letter-spacing: -0.015em; line-height: 1.28; }
+.dc-goal { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.dc-meta { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.dc-prog { display: flex; align-items: center; gap: 5px; margin-top: 2px; }
+.dc-locked {
+  display: flex; flex-direction: column; gap: 6px; padding: 18px; border-radius: 20px; height: 100%;
+  border: 1.5px dashed var(--line-strong); background: transparent; opacity: 0.7;
+}
+.dc-locked .dc-badge { position: static; align-self: flex-start; box-shadow: none; border: 1px solid var(--line); }

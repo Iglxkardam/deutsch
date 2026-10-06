@@ -119,3 +119,15 @@
   .rc-tiles-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .rc-tiles-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* ── structured text: short paragraphs and bullet lists inside rule / tip / warn / p ─ */
+.rc-rich > p { margin: 0; }
+.rc-rich > p + p, .rc-rich > p + .rc-ul, .rc-rich > .rc-ul + p { margin-top: 10px; }
+.rc-ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; }
+.rc-ul li { position: relative; padding-left: 22px; line-height: 1.55; }
+.rc-ul li::before {
+  content: ''; position: absolute; left: 4px; top: 0.62em; width: 8px; height: 8px; border-radius: 50%;
+  background: color-mix(in srgb, var(--rc-accent, var(--blue)) 78%, transparent);
+}
+.rc-call-tip .rc-ul li::before { background: color-mix(in srgb, var(--green) 78%, transparent); }
+.rc-call-warn .rc-ul li::before { background: color-mix(in srgb, var(--orange) 80%, transparent); }

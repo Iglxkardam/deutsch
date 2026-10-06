@@ -256,11 +256,16 @@ await esbuild.build({
   alias: { '@': path.join(ROOT, 'src') }, logLevel: 'silent',
 })
 const { lookup } = await import('file://' + gtmp.replace(/\\/g, '/'))
-const namesFile = path.join(ROOT, 'scripts', 'audit-names.txt')
+// names that never get a tooltip: the shared list plus one file per Day in scripts/audit-names.d/
+const nameFiles = [path.join(ROOT, 'scripts', 'audit-names.txt')]
+const nameDir = path.join(ROOT, 'scripts', 'audit-names.d')
+if (fs.existsSync(nameDir)) for (const f of fs.readdirSync(nameDir)) if (f.endsWith('.txt')) nameFiles.push(path.join(nameDir, f))
 const NAMES = new Set(
-  fs.existsSync(namesFile)
-    ? fs.readFileSync(namesFile, 'utf8').split(/\r?\n/).map((l) => l.trim().toLowerCase()).filter((l) => l && !l.startsWith('#'))
-    : [],
+  nameFiles
+    .filter((f) => fs.existsSync(f))
+    .flatMap((f) => fs.readFileSync(f, 'utf8').split(/\r?\n/))
+    .map((l) => l.trim().toLowerCase())
+    .filter((l) => l && !l.startsWith('#')),
 )
 const AMBIGUOUS = new Set(['in', 'an', 'man', 'also', 'was', 'hat', 'die', 'bald', 'mal', 'hier', 'boot'])
 const tok = (t) => String(t ?? '').split(/[^\p{L}\p{M}ß-]+/u).filter((w) => w.length >= 2)

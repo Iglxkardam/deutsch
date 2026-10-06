@@ -36,7 +36,7 @@ export default function Course() {
             </div>
           </div>
 
-          <div className="grid auto-md">
+          <div className="dc-grid">
             {w.days.map((id, n) => {
               const day = dayById(id)
               const p = progress[id]
@@ -44,18 +44,16 @@ export default function Course() {
 
               if (!day) {
                 return (
-                  <div key={id} className="day-card locked">
-                    <div className="between">
-                      <span className="day-num">DAY {id}</span>
-                      <span className="tiny dim">🔒</span>
-                    </div>
+                  <div key={id} className="dc-locked">
+                    <span className="dc-badge">Day {id}</span>
                     <span className="h3" style={{ fontSize: 16 }}>{plan?.title ?? 'Coming soon'}</span>
-                    <span className="small muted grow">{plan?.focus}</span>
+                    {plan?.focus && <span className="small muted grow">{plan.focus}</span>}
                     <span className="tiny dim">Not written yet</span>
                   </div>
                 )
               }
 
+              const complete = !!p?.completedAt
               return (
                 <motion.div
                   key={id}
@@ -64,37 +62,46 @@ export default function Course() {
                   viewport={{ once: true, margin: '-30px' }}
                   transition={{ duration: 0.35, delay: Math.min(n * 0.04, 0.25), ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <Link to={`/tag/${id}`} className={`day-card${p?.completedAt ? ' done' : ''}`}>
-                    <div className="between">
-                      <span className="day-num">DAY {id}</span>
-                      {p?.completedAt ? (
-                        <span style={{ color: 'var(--green)', fontWeight: 800, fontSize: 13 }}>✓</span>
-                      ) : (
-                        <span className="tiny dim mono">{day.minutes} min</span>
+                  <Link
+                    to={`/tag/${id}`}
+                    className={`dc${complete ? ' dc-done' : ''}`}
+                    style={{ ['--c' as string]: w.color }}
+                  >
+                    <div className="dc-art">
+                      <span className="dc-art-n" aria-hidden="true">{id}</span>
+                      {day.hero && (
+                        <img
+                          src={`/art/${day.hero}.jpg`}
+                          alt=""
+                          loading="lazy"
+                          onError={(e) => { e.currentTarget.style.display = 'none' }}
+                        />
+                      )}
+                      <span className="dc-badge">Day {id}</span>
+                      <span className="dc-state">{complete ? '✓ Done' : `${day.minutes} min`}</span>
+                    </div>
+
+                    <div className="dc-body">
+                      <h3 className="dc-title">{day.title}</h3>
+                      <p className="dc-goal">{day.goal}</p>
+                      <div className="dc-meta">
+                        <Pill>Ch. {day.kapitel}</Pill>
+                        <Pill>{day.vocab.length} words</Pill>
+                        <Pill color={w.color}>{day.examSkill}</Pill>
+                      </div>
+                      {p && (p.notesRead || p.vocabDone || p.quizTotal > 0) && (
+                        <div className="dc-prog">
+                          <Dot on={p.notesRead} label="Notes" />
+                          <Dot on={p.vocabDone} label="Words" />
+                          <Dot on={p.quizTotal > 0 && p.quizScore === p.quizTotal} label="Quiz" />
+                          {p.quizTotal > 0 && (
+                            <span className="tiny dim mono" style={{ marginLeft: 'auto' }}>
+                              {p.quizScore}/{p.quizTotal}
+                            </span>
+                          )}
+                        </div>
                       )}
                     </div>
-
-                    <span className="h3" style={{ fontSize: 16 }}>{day.title}</span>
-                    <span className="small muted grow">{day.goal}</span>
-
-                    <div className="row wrap" style={{ gap: 5 }}>
-                      <Pill>Ch. {day.kapitel}</Pill>
-                      <Pill>{day.vocab.length} words</Pill>
-                      <Pill color={w.color}>{day.examSkill}</Pill>
-                    </div>
-
-                    {p && (p.notesRead || p.vocabDone || p.quizTotal > 0) && (
-                      <div className="row" style={{ gap: 5, marginTop: 2 }}>
-                        <Dot on={p.notesRead} label="Notes" />
-                        <Dot on={p.vocabDone} label="Words" />
-                        <Dot on={p.quizTotal > 0 && p.quizScore === p.quizTotal} label="Quiz" />
-                        {p.quizTotal > 0 && (
-                          <span className="tiny dim mono" style={{ marginLeft: 'auto' }}>
-                            {p.quizScore}/{p.quizTotal}
-                          </span>
-                        )}
-                      </div>
-                    )}
                   </Link>
                 </motion.div>
               )

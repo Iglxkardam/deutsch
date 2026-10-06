@@ -1,0 +1,10 @@
+{
+  "d04-hero": {
+    "ratio": "16:9",
+    "prompt": "Two friendly people at a small cafe table by a window exchanging contact details: one holds a smartphone and reads from it, the other writes on a notebook with a pen, warm morning light, coffee cups, a potted plant, calm and tidy."
+  },
+  "d04-vorstellen": {
+    "ratio": "16:9",
+    "prompt": "A bright classroom where six adult learners sit in a circle on simple chairs; one woman stands and smiles while introducing herself with an open hand gesture, the others listen kindly, notebooks on their laps, a plant and a window in the background, full-bleed scene, nothing in the corners, no watermark, no text."
+  }
+}

@@ -29,4 +29,12 @@ export const g15: Record<string, Gloss> = {
   möchtest: { en: 'would like to', note: 'möchten · du' },
   freund: { en: 'friend (male), boyfriend', note: 'der Freund' },
   lustig: { en: 'funny, amusing' },
+  kollegin: { en: 'colleague (female)', note: 'die Kollegin' },
+  chefin: { en: 'boss (female)', note: 'die Chefin' },
+  erklären: { en: 'to explain' },
+  manchmal: { en: 'sometimes' },
+  telefoniere: { en: 'phone, make phone calls', note: 'telefonieren · ich' },
+  kunden: { en: 'customers, clients', note: 'plural of der Kunde' },
+  fragen: { en: 'questions', note: 'plural of die Frage; also the verb fragen = to ask' },
+  club: { en: 'club', note: 'der Club' },
 }

@@ -1,0 +1,14 @@
+{
+  "d10-hero": {
+    "ratio": "16:9",
+    "prompt": "A lively open-air market stall on a German town square in morning light: crates of apples, tomatoes and cucumbers, baskets of bread rolls, a shopper with a cloth bag choosing fruit, a bakery with a striped awning in the background."
+  },
+  "d10-street": {
+    "ratio": "16:9",
+    "prompt": "A calm old German town in the early evening: a small square with a town hall tower, a narrow cobbled lane leading off to the left and a wider street to the right, a plain blank enamel plate by a front door, long soft shadows."
+  },
+  "d10-shops": {
+    "ratio": "16:9",
+    "prompt": "A row of four small shopfronts side by side: a bakery with loaves in the window, a fruit and vegetable shop with crates, a butcher-style deli, and a corner supermarket with a shopping cart outside; plain blank awnings and blank windows with no signs, no lettering, no writing at all, warm cream background."
+  }
+}

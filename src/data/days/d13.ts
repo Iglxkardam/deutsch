@@ -14,7 +14,7 @@ export const d13: Day = {
     { t: 'h', text: '1 · Einen Termin vereinbaren' },
     {
       t: 'p',
-      text: 'Class began with a role-play from the last lesson: a phone call to a doctor’s surgery (**die Praxis**) to **make an appointment**. In pairs you changed the names, the days and the times. The call always follows the same pattern, so once you know it you can change any detail.',
+      text: 'Class began with a role-play from the last lesson: a phone call to a doctor’s surgery (**die Praxis**) to **make an appointment**. In pairs you changed the names, the days and the times.\n\nThe call always follows the same pattern, so once you know it you can change any detail.',
     },
     {
       t: 'table',
@@ -44,11 +44,28 @@ export const d13: Day = {
     {
       t: 'rule',
       title: 'Merke — a polite wish and a polite no',
-      body: '**Ich hätte gerne …** (“I would like …”) is the polite way to ask for something; learn it as a fixed phrase for now. To refuse a time, say **Nein, leider nicht** or give the reason (**Am Freitag muss ich arbeiten**) and the other person offers another time. Times on the phone are said like the **formal clock** from **Tag 12**: *elf Uhr dreißig*, *zehn Uhr fünfundvierzig*.',
+      body: '**Ich hätte gerne …** (also **Ich hätte gern …**, “I would like …”) is the most polite way to ask for something; learn it as a fixed phrase for now.\n\n- To refuse a time, say **Nein, leider nicht** or give the reason (**Am Freitag muss ich arbeiten**) and the other person offers another time.\n- Times on the phone are said like the **formal clock** from **Tag 12**: *elf Uhr dreißig*, *zehn Uhr fünfundvierzig*.',
+    },
+    {
+      t: 'table',
+      caption: 'Höflich am Telefon',
+      head: ['Wie höflich?', 'Auf Deutsch', 'English'],
+      rows: [
+        ['unhöflich', 'Ich will einen Termin!', 'I want an appointment! (rude)'],
+        ['höflich', 'Kann ich bitte einen Termin haben?', 'Can I have an appointment, please?'],
+        ['höflich', 'Ich möchte bitte einen Termin.', 'I would like an appointment, please.'],
+        ['sehr höflich', 'Ich hätte gern einen Termin.', 'I would like an appointment.'],
+      ],
+      say: [
+        'Ich will einen Termin!',
+        'Kann ich bitte einen Termin haben?',
+        'Ich möchte bitte einen Termin.',
+        'Ich hätte gern einen Termin.',
+      ],
     },
     {
       t: 'warn',
-      text: '**Auf Wiederhören** is only for the **telephone** (you hear each other, you do not see each other). Face to face you say **Auf Wiedersehen** (Tag 1).',
+      text: '**Auf Wiederhören** is for the **telephone** (and the radio): you hear each other, you do not see each other.\n\n- Face to face you say **Auf Wiedersehen** (Tag 1).\n- On the phone to a surgery or an office, use **Sie** all the way through.',
     },
     {
       t: 'ex',
@@ -89,18 +106,18 @@ export const d13: Day = {
         { de: 'Am Samstag grillen wir zusammen im Park.', hi: 'On Saturday we are having a barbecue together in the park.' },
         { de: 'Mila fährt gern Fahrrad.', hi: 'Mila likes cycling.' },
         { de: 'Alex findet Computerspielen super.', hi: 'Alex thinks playing computer games is great.' },
-        { de: 'Helena mag Ski.', hi: 'Helena likes skiing (the sport).' },
+        { de: 'Helena mag ihre Ski.', hi: 'Helena likes her skis.' },
         { de: 'Wir sind beim Wandern.', hi: 'We are out hiking (right now).' },
       ],
     },
     {
       t: 'tip',
-      text: '**Wir sind beim Wandern** means “we are in the middle of hiking”: **beim** (= bei + dem) plus the verb used as a noun, so it gets a capital letter: *beim Skifahren, beim Klettern, beim Feiern*. The teacher used this pattern in class; the dative **dem** gets its own explanation on **Tag 17**. **gern** and **mögen** were explained on **Tag 11**: never add *gern* to *mögen*.',
+      text: '**Wir sind beim Wandern** means “we are in the middle of hiking”.\n\n- **beim** (= bei + dem) plus the verb used as a noun, so it gets a capital letter: *beim Skifahren, beim Klettern, beim Feiern*.\n- The teacher used this pattern in class; the dative **dem** gets its own explanation on **Tag 17**.\n- **gern** and **mögen** were explained on **Tag 11**: **gern** goes with an activity verb (*Mila fährt gern Fahrrad*), **mögen** with a noun (*Helena mag ihre Ski*).',
     },
     {
       t: 'rule',
       title: 'Strategie — learn words around a topic',
-      body: 'Class task: choose three activities and write **five words** that come to mind for each. For **wandern** you might write the nouns below. Looking words up in a dictionary is fine, but copy the **article** as well, and write only words, not whole translated sentences.',
+      body: 'Class task: choose three activities and write **five words** that come to mind for each. For **wandern** you might write the nouns below.\n\n- Looking words up in a dictionary is fine.\n- Copy the **article** as well.\n- Write only words, not whole translated sentences.',
     },
     {
       t: 'nouns',
@@ -115,12 +132,21 @@ export const d13: Day = {
     { t: 'h', text: '3 · Das Datum und Veranstaltungen' },
     {
       t: 'p',
-      text: 'The listening task in class was about **Veranstaltungen** (events): football, a concert, a film, a town festival, a bike tour. What you must catch is the **date** and the **time**. German dates use an **ordinal number** (“the second”, “the third”) and are written with a dot: **2. September**.',
+      text: 'The listening task in class was about **Veranstaltungen** (events): football, a concert, a film, a town festival, a bike tour. What you must catch is the **date** and the **time**.\n\nGerman dates use an **ordinal number** (“the second”, “the third”) and are written with a dot: **2. September**.',
     },
     {
       t: 'rule',
       title: 'Regel — ordinal numbers',
-      body: 'After **am** the ordinal ends in **-en**. Numbers from 1 to 19 add **-t-** to the number (**vier → vierten**, **zehn → zehnten**); from 20 they add **-st-** (**zwanzig → zwanzigsten**). Four are irregular: **erst-** (1), **dritt-** (3), **siebt-** (7), **acht-** (8). So **am 3. Mai** is spoken **am dritten Mai**. Ask the date with **Der Wievielte ist heute?** — **Heute ist der fünfte Oktober.**',
+      body: 'An ordinal is the number plus **-t-** or **-st-**, with four irregular ones.\n\n- Numbers from 1 to 19 add **-t-** to the number: **vier → vierten**, **sechzehn → sechzehnten**.\n- From 20 to 31 they add **-st-**: **zwanzig → zwanzigsten**, **einunddreißig → einunddreißigsten**.\n- Four are irregular: **erst-** (1), **dritt-** (3), **siebt-** (7, not *sieben-t*) and **acht-** (8, only one t).',
+    },
+    {
+      t: 'rule',
+      title: 'Regel — the ordinal ending',
+      body: 'The ending of the ordinal depends on the word before it.\n\n- After **am** (and after **ab dem**) it ends in **-en**: **am 3. Mai** is spoken **am dritten Mai**.\n- After **der** it ends in **-e**: **Der Wievielte ist heute?** — **Heute ist der dritte Mai.**\n- To ask about a day: **Wann?** — **Am dritten Mai.**',
+    },
+    {
+      t: 'tip',
+      text: 'Dates in figures: **day first, then month**, each followed by a dot: **16.7.** or **16.07.2026**.\n\n- The month number is said as an ordinal too, or you say the month name: **am 15.11.** = **am fünfzehnten November** or **am fünfzehnten Elften** (Kursbuch p. 66).\n- So **Am 16.7.** from the Sofia dialogue in class is **am sechzehnten Juli** (or **am sechzehnten Siebten**).\n- A year is read as a normal number: **2026** = *zweitausendsechsundzwanzig*.',
     },
     {
       t: 'table',
@@ -133,8 +159,11 @@ export const d13: Day = {
         ['7.', 'siebten', 'am siebten Juli'],
         ['8.', 'achten', 'am achten Juni'],
         ['12.', 'zwölften', 'am zwölften Mai'],
+        ['13.', 'dreizehnten', 'am dreizehnten März'],
+        ['16.', 'sechzehnten', 'am sechzehnten Juli'],
         ['20.', 'zwanzigsten', 'am zwanzigsten September'],
         ['21.', 'einundzwanzigsten', 'am einundzwanzigsten Oktober'],
+        ['30.', 'dreißigsten', 'am dreißigsten April'],
       ],
       say: [
         'am ersten Mai',
@@ -143,8 +172,11 @@ export const d13: Day = {
         'am siebten Juli',
         'am achten Juni',
         'am zwölften Mai',
+        'am dreizehnten März',
+        'am sechzehnten Juli',
         'am zwanzigsten September',
         'am einundzwanzigsten Oktober',
+        'am dreißigsten April',
       ],
     },
     {
@@ -161,20 +193,20 @@ export const d13: Day = {
       say: [
         'Das Fußballspiel ist am zweiten September um siebzehn Uhr.',
         'Das Konzert ist am dritten September um einundzwanzig Uhr.',
-        'Der Film Moonlight kommt ab dem zwölften September ins Kino.',
-        'Das Stadtfest in Nürnberg beginnt ab dem sechzehnten September.',
+        'Der Film Moonlight kommt ab dem zwölften September im Forum-Kino.',
+        'In Nürnberg ist ab dem sechzehnten September das Stadtfest.',
         'Die Radtour an der Isar ist am zwanzigsten September.',
       ],
     },
     {
       t: 'tip',
-      text: 'These five events come from the **class audio** (Kursbuch Kapitel 6), as heard and noted in class. In the exam the task is the same: read the gaps first, then listen and write **only** the numbers and names you need. This is the Kapitel 6 **Strategie**: pick out the important information. Notes: **ab** + date means “from that day on” (**Tag 17**).',
+      text: 'These five events come from the **class audio** (Übungsbuch Kapitel 6, Übung 4b, p. 72), as heard in class.\n\n- In the exam the task is the same: read the gaps first, then listen and write **only** the numbers and names you need.\n- This is the Kapitel 6 **Strategie**: pick out the important information.\n- Notes: **ab** + date means “from that day on” (**Tag 17**).',
     },
 
     { t: 'h', text: '4 · war und hatte: gestern' },
     {
       t: 'p',
-      text: 'Last part of the lesson: the past forms of **sein** and **haben**. **war** means “was / were” and **hatte** means “had”. German has two past tenses; **war** and **hatte** are the easy ones, and for these two verbs they are the normal way to say it in speech.',
+      text: 'Last part of the lesson: the past forms of **sein** and **haben**. **war** means “was / were” and **hatte** means “had”. These forms are the **Präteritum**.\n\nGerman has another past form for most verbs (the **Perfekt**, later in the course), but for **sein** and **haben** the Präteritum is the normal way to talk about the past, in speech too.',
     },
     {
       t: 'conj',
@@ -206,8 +238,8 @@ export const d13: Day = {
     },
     {
       t: 'rule',
-      title: 'Regel — war and hatte are one word, not a helper',
-      body: 'Use **war** and **hatte** as the **main verb**: **Ich war krank** (I was ill), **Ich hatte einen Hund** (I had a dog). They are not combined with another verb. English “we were playing” cannot be built as *wir waren spielen*. For other verbs in the past German uses a different form (the **Perfekt**, later in the course), so do not guess past forms of other verbs yet.',
+      title: 'Regel — war and hatte are the main verb here',
+      body: 'Use **war** and **hatte** as the **main verb** of the sentence: **Ich war krank** (I was ill), **Ich hatte einen Hund** (I had a dog).\n\n- German has no “-ing” form: English “we were playing” is **not** *wir waren spielen*.\n- For other verbs in the past German uses the **Perfekt** (later in the course), so do not build past forms of other verbs with war or hatte yet.',
     },
     {
       t: 'sentence',
@@ -234,7 +266,7 @@ export const d13: Day = {
     {
       t: 'compare',
       rows: [
-        { wrong: 'Wir waren Spiele spielen.', right: 'Wir haben Spiele gespielt.', why: 'war is not combined with another verb. For playing, use the Perfekt (taught later in the course).' },
+        { wrong: 'Wir waren Spiele spielen.', right: 'Wir haben Spiele gespielt.', why: 'To say “we were playing / we played games”, German uses the Perfekt (taught later in the course), not war + a second verb.' },
         { wrong: 'Wir hatten einen neues Auto.', right: 'Wir hatten ein neues Auto.', why: 'das Auto is neuter, so ein. einen is only for masculine nouns (Tag 11).' },
         { wrong: 'Wir waren in das Kino.', right: 'Wir waren im Kino.', why: 'A place where you were (Wo?) takes the dative: im = in dem (Tag 17).' },
         { wrong: 'Ich war mit meiner Freunde im Restaurant.', right: 'Ich war mit meinen Freunden im Restaurant.', why: 'After mit the plural is dative: meinen Freunden, with an extra -n (Tag 17).' },
@@ -258,7 +290,7 @@ export const d13: Day = {
     { de: 'Ski fahren', hi: 'स्कीइंग करना', en: 'to ski', type: 'phrase', forms: 'ich fahre Ski · du fährst Ski · er fährt Ski', ex: 'Helena fährt gern Ski.', exHi: 'Helena likes skiing.' },
     { de: 'Fahrrad fahren', hi: 'साइकिल चलाना', en: 'to cycle', type: 'phrase', forms: 'ich fahre Fahrrad · du fährst Fahrrad · er fährt Fahrrad', ex: 'Mila fährt gern Fahrrad.', exHi: 'Mila likes cycling.' },
     { de: 'ins Café gehen', hi: 'कैफ़े जाना', en: 'to go to a café', type: 'phrase', ex: 'Nach dem Kurs gehen wir ins Café.', exHi: 'After the course we go to a café.' },
-    { de: 'das Spiel', hi: 'खेल', en: 'game', type: 'noun', gender: 'n', pl: 'die Spiele', ex: 'Das Spiel ist am Samstag.', exHi: 'The match is on Saturday.' },
+    { de: 'das Spiel', hi: 'खेल, मैच', en: 'game, match', type: 'noun', gender: 'n', pl: 'die Spiele', ex: 'Das Spiel ist am Samstag.', exHi: 'The match is on Saturday.' },
     { de: 'der Berg', hi: 'पहाड़', en: 'mountain', type: 'noun', gender: 'm', pl: 'die Berge', ex: 'Der Berg ist sehr hoch.', exHi: 'The mountain is very high.' },
     { de: 'der Rucksack', hi: 'पीठ पर टाँगने वाला बैग', en: 'backpack', type: 'noun', gender: 'm', pl: 'die Rucksäcke', ex: 'Mein Rucksack ist neu.', exHi: 'My backpack is new.' },
     { de: 'die Natur', hi: 'प्रकृति', en: 'nature', type: 'noun', gender: 'f', ex: 'Die Natur ist schön.', exHi: 'Nature is beautiful.' },
@@ -268,7 +300,7 @@ export const d13: Day = {
     { de: 'der Hunger', hi: 'भूख', en: 'hunger', type: 'noun', gender: 'm', ex: 'Wir hatten großen Hunger.', exHi: 'We were very hungry.' },
     { de: 'der Durst', hi: 'प्यास', en: 'thirst', type: 'noun', gender: 'm', ex: 'Du hattest Hunger und Durst.', exHi: 'You were hungry and thirsty.' },
     { de: 'der Spaß', hi: 'मज़ा', en: 'fun', type: 'noun', gender: 'm', ex: 'Die Kinder hatten viel Spaß.', exHi: 'The children had a lot of fun.' },
-    { de: 'der Urlaub', hi: 'छुट्टी (अवकाश)', en: 'holiday, time off', type: 'noun', gender: 'm', ex: 'Wir hatten Urlaub.', exHi: 'We were on holiday.' },
+    { de: 'der Urlaub', hi: 'छुट्टी (अवकाश)', en: 'holiday, time off', type: 'noun', gender: 'm', pl: 'die Urlaube', ex: 'Wir hatten Urlaub.', exHi: 'We were on holiday.' },
     { de: 'müde', hi: 'थका हुआ', en: 'tired', type: 'adj', ex: 'Ich war gestern sehr müde.', exHi: 'I was very tired yesterday.' },
     { de: 'krank', hi: 'बीमार', en: 'ill, sick', type: 'adj', ex: 'Ich war krank.', exHi: 'I was ill.' },
     { de: 'glücklich', hi: 'ख़ुश', en: 'happy', type: 'adj', ex: 'Er war glücklich.', exHi: 'He was happy.' },
@@ -280,8 +312,8 @@ export const d13: Day = {
       { who: 'Praxis', de: 'Praxis Keller, guten Tag. Was kann ich für Sie tun?', hi: 'Keller surgery, hello. How can I help you?' },
       { who: 'Herr Rao', de: 'Guten Tag, mein Name ist Rao. Ich hätte gerne einen Termin.', hi: 'Hello, my name is Rao. I would like an appointment.' },
       { who: 'Praxis', de: 'Können Sie am Freitag um zehn Uhr fünfundvierzig kommen?', hi: 'Can you come on Friday at 10:45?' },
-      { who: 'Herr Rao', de: 'Nein, am Freitag muss ich arbeiten. Haben Sie auch am Montag einen Termin?', hi: 'No, I have to work on Friday. Do you also have an appointment on Monday?' },
-      { who: 'Praxis', de: 'Nein, leider nicht. Am Montag habe ich keinen Termin mehr frei.', hi: 'No, unfortunately not. On Monday I have no appointment left.' },
+      { who: 'Herr Rao', de: 'Nein, am Freitag muss ich arbeiten. Geht es auch am Montag?', hi: 'No, I have to work on Friday. Is Monday possible too?' },
+      { who: 'Praxis', de: 'Nein, leider nicht. Am Montag ist nichts mehr frei.', hi: 'No, unfortunately not. Nothing is free on Monday any more.' },
       { who: 'Praxis', de: 'Geht es am Mittwoch um elf Uhr dreißig?', hi: 'Does Wednesday at 11:30 suit you?' },
       { who: 'Herr Rao', de: 'Ja, das geht. Vielen Dank.', hi: 'Yes, that works. Thank you very much.' },
       { who: 'Praxis', de: 'Also, Mittwoch um elf Uhr dreißig. Wie ist noch einmal Ihr Name, bitte?', hi: 'So, Wednesday at 11:30. What is your name again, please?' },
@@ -293,7 +325,7 @@ export const d13: Day = {
   exercises: [
     { k: 'mcq', q: 'Which sentence is the polite way to ask for an appointment on the phone?', options: ['Ich hätte gerne einen Termin.', 'Ich bin ein Termin.', 'Gib mir einen Termin.', 'Ich Termin gerne.'], a: 0, why: 'Ich hätte gerne … is the polite wish formula.' },
     { k: 'fill', q: 'Ich ___ gerne einen Termin.  (I would like …)', a: ['hätte'], why: 'Ich hätte gerne … is the fixed polite phrase.' },
-    { k: 'fill', q: 'Wie ist noch ___ Ihr Name, bitte?  (… again)', a: ['einmal'], why: 'noch einmal = once more, again.' },
+    { k: 'fill', q: 'Wie ist noch ___ Ihr Name, bitte?  (… again)', a: ['einmal', 'mal'], why: 'noch einmal (spoken often: noch mal) = once more, again.' },
     { k: 'mcq', q: 'When do you say “Auf Wiederhören”?', options: ['at the end of a phone call', 'when you leave a shop', 'when you meet someone', 'when you go to bed'], a: 0, why: 'Wiederhören is for the telephone; face to face it is Auf Wiedersehen.' },
     { k: 'mcq', q: 'The surgery offers you Friday, but you must work. What do you say?', options: ['Nein, am Freitag muss ich arbeiten.', 'Ja, das geht.', 'Auf Wiederhören!', 'Ich hatte Hunger.'], a: 0, why: 'You decline and give the reason; the surgery then offers another time.' },
     { k: 'mcq', q: 'How do you say 11:30 in a formal appointment time?', options: ['elf Uhr dreißig', 'halb elf', 'dreißig Uhr elf', 'elf dreißig Uhren'], a: 0, why: 'Formal time is hour + Uhr + minutes (Tag 12).' },
@@ -304,7 +336,7 @@ export const d13: Day = {
     { k: 'artikel', noun: 'Rucksack', a: 'der', why: 'der Rucksack — masculine. Plural: die Rucksäcke.' },
     { k: 'artikel', noun: 'Spiel', a: 'das', why: 'das Spiel — neuter. Plural: die Spiele.' },
     { k: 'artikel', noun: 'Konzert', a: 'das', why: 'das Konzert — neuter. Plural: die Konzerte.' },
-    { k: 'artikel', noun: 'Veranstaltung', a: 'die', why: 'die Veranstaltung — feminine, as with every noun ending in -ung.' },
+    { k: 'artikel', noun: 'Veranstaltung', a: 'die', why: 'die Veranstaltung — feminine, like the other nouns made from a verb with -ung. Plural: die Veranstaltungen.' },
     { k: 'artikel', noun: 'Radtour', a: 'die', why: 'die Radtour — feminine. Plural: die Radtouren.' },
     { k: 'mcq', q: 'What does “die Freizeit” mean?', options: ['free time', 'a free ticket', 'the clock time', 'a holiday booking'], a: 0, why: 'frei (free) + Zeit (time) = Freizeit.' },
     { k: 'mcq', q: 'Which activity do you do in the snow?', options: ['Ski fahren', 'wandern', 'grillen', 'Fahrrad fahren'], a: 0, why: 'Ski fahren = to ski.' },
@@ -314,8 +346,11 @@ export const d13: Day = {
     { k: 'mcq', q: 'How do you say “am 3. Mai” aloud?', options: ['am dritten Mai', 'am dreiten Mai', 'am drittem Mai', 'am drei Mai'], a: 0, why: 'dritt- is irregular; after am the ordinal ends in -en.' },
     { k: 'fill', q: 'am 2. September = am ___ September', a: ['zweiten'], why: '2. is spoken zweiten (zwei + t + en).' },
     { k: 'fill', q: 'am 20. September = am ___ September', a: ['zwanzigsten'], why: 'From 20 on the ordinal adds -st-: zwanzigsten.' },
-    { k: 'mcq', q: 'How do you say “am 7. Juli”?', options: ['am siebten Juli', 'am siebenten Juli', 'am sieben Juli', 'am siebzehnten Juli'], a: 0, why: 'siebt- is the irregular ordinal for 7.' },
+    { k: 'mcq', q: 'How do you say “am 7. Juli”?', options: ['am siebten Juli', 'am siebte Juli', 'am sieben Juli', 'am siebzehnten Juli'], a: 0, why: 'siebt- is the irregular ordinal for 7; after am it ends in -en. siebzehnten is the 17th.' },
     { k: 'fill', q: 'am 1. Mai = am ___ Mai', a: ['ersten'], why: 'erst- is irregular: am ersten Mai.' },
+    { k: 'fill', q: 'Heute ist der ___ Oktober.  (3.)', a: ['dritte'], why: 'After der the ordinal ends in -e: der dritte.' },
+    { k: 'mcq', q: 'How do you say “Ich habe am 15.11. Geburtstag”?', options: ['am fünfzehnten November', 'am fünfzehn November', 'am fünfzigsten November', 'am elften Fünfzehnten'], a: 0, why: 'Day first, then month: 15.11. is the fifteenth of November (also said: am fünfzehnten Elften).' },
+    { k: 'mcq', q: 'Hören: “Die Veranstaltung ist am dreizehnten Mai.” Which date is it?', options: ['13.5.', '30.5.', '3.5.', '5.13.'], a: 0, why: 'dreizehnten = 13th (dreißigsten would be 30th); day first, then month.' },
     { k: 'mcq', q: 'Hören: “Das Konzert ist am 3. September um 21 Uhr.” Wann beginnt das Konzert?', options: ['um 21 Uhr', 'um 12 Uhr', 'um 17 Uhr', 'um 13 Uhr'], a: 0, why: 'The time is 21 Uhr, the date is 3. September.' },
     { k: 'listen', text: 'Das Fußballspiel ist am zweiten September.', a: ['Das Fußballspiel ist am zweiten September.', 'Das Fußballspiel ist am zweiten September'], why: 'Diktat: a date with an ordinal number.' },
     { k: 'fill', q: 'Ich ___ gestern keine Zeit.  (haben, Präteritum)', a: ['hatte'], why: 'ich hatte — no ending.' },
@@ -333,5 +368,5 @@ export const d13: Day = {
     { k: 'listen', text: 'Das Essen war teuer.', a: ['Das Essen war teuer.', 'Das Essen war teuer'], why: 'Diktat: war with a noun subject.' },
   ],
   examTip:
-    'In Hören the dates and times are the answers, so read the answer gaps before the audio and write only numbers and names while you listen. Ordinals such as “zweiten” and “zwanzigsten” sound alike, so practise saying them aloud. In Sprechen Teil 3 you make a request and react to one; the polite wish (Ich hätte gerne …) and the polite no with a reason (Nein, leider nicht. Am Freitag muss ich arbeiten.) from section 1 are ready-made answers.',
+    'In Hören, dates, times and prices are often the answers, so read the questions before the audio and note only numbers and names while you listen. Ordinals such as “dreizehnten” and “dreißigsten” sound alike, so practise saying them aloud. In Sprechen Teil 3 you make a request (Bitte) and react to your partner’s; the polite wish (Ich hätte gern …) and the replies Ja, das geht. / Nein, leider nicht. from section 1 are ready-made.',
 }

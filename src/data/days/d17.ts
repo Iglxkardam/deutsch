@@ -14,12 +14,12 @@ export const d17: Day = {
     { t: 'h', text: '1 · Der Dativ: ein dritter Fall' },
     {
       t: 'p',
-      text: 'So far you know the **Nominativ** (the subject, **Tag 11**) and the **Akkusativ** (the direct object: *Ich habe einen Hund*). Today there is a third case, the **Dativ**. It appears in two places: after a **small group of verbs** and after a **fixed group of prepositions**.',
+      text: 'So far you know two cases:\n\n- the **Nominativ**: the subject (**Tag 11**)\n- the **Akkusativ**: the direct object (“Ich habe einen Hund”)\n\nToday there is a third case, the **Dativ**. In this lesson you meet it after a **small group of verbs** and after **certain prepositions** (section 3).',
     },
     {
       t: 'rule',
-      title: 'Regel — some verbs always take a dative object',
-      body: 'Most verbs you know (**haben, essen, kaufen, brauchen, nehmen, sehen**) take an **Akkusativ** object. A small group takes the **Dativ** instead: **helfen, gehören, schmecken, passen, antworten**. The dative object answers **Wem?** (to whom?): *Wem helfe ich? Wem gehört das Haus?* The accusative answers **Wen?** or **Was?** Learn these verbs together with “+ Dativ”. A few more dative verbs follow in later chapters. Some verbs, such as **geben**, have both: *Ich gebe dem Kind einen Apfel* (dative person, accusative thing).',
+      title: 'Regel — a few verbs take a dative object',
+      body: 'Most verbs take an **Akkusativ** object. A small group takes the **Dativ** instead.\n\n- most verbs you know take the accusative: **haben, essen, kaufen, brauchen, nehmen, sehen**\n- dative verbs: **helfen, gehören, schmecken, passen, antworten**\n- the dative object answers **Wem?** (to whom?): “Wem helfe ich? Wem gehört das Haus?”\n- the accusative answers **Wen?** or **Was?**\n- some verbs, such as **geben**, have both: “Ich gebe dem Kind einen Apfel” (dative person, accusative thing)\n\nLearn the dative verbs together with “+ Dativ”. A few more dative verbs follow in later chapters.',
     },
 
     { t: 'h', text: '2 · Die Artikel im Dativ' },
@@ -41,7 +41,42 @@ export const d17: Day = {
     {
       t: 'rule',
       title: 'Regel — dem, der, dem, den + n',
-      body: 'In the dative **masculine and neuter are the same**: **dem / einem / meinem**. The **feminine** is **der / einer / meiner**. In the **plural** the article is **den** and the **noun adds -n**: **die Kinder → den Kindern**, **die Freunde → den Freunden**. Do not add a second -n if the plural already ends in **-n** (**die Tanten → den Tanten**) or in **-s** (**die Autos → den Autos**). **kein-** and the possessives (**mein, dein, sein, ihr, unser …**) take the same endings as **ein-**: *seiner Schwester, unserem Kind, ihrem Kind.*',
+      body: 'The dative articles are in the Dativ row of the table above.\n\n- **masculine and neuter are the same**: **dem / einem / meinem**\n- **feminine**: **der / einer / meiner**\n- **plural**: the article is **den**, and the **noun adds -n**\n- do not add a second -n if the plural already ends in **-n** or in **-s**',
+    },
+    {
+      t: 'table',
+      caption: 'Plural im Dativ',
+      head: ['Nominativ Plural', 'Dativ Plural', 'Warum'],
+      rows: [
+        ['die Kinder', 'den Kindern', 'noun adds -n'],
+        ['die Freunde', 'den Freunden', 'noun adds -n'],
+        ['die Tanten', 'den Tanten', 'already ends in -n: no second -n'],
+        ['die Autos', 'den Autos', 'ends in -s: no -n added'],
+      ],
+    },
+    {
+      t: 'p',
+      text: '**kein-** and the possessives (**mein, dein, sein, ihr, unser …**) take the same endings as **ein-**; in the plural they end in **-en**.',
+    },
+    {
+      t: 'table',
+      caption: 'kein- und Possessiva im Dativ',
+      head: ['maskulin', 'feminin', 'neutrum', 'Plural'],
+      rows: [['keinem Mann', 'seiner Schwester', 'unserem Kind / ihrem Kind', 'keinen Kindern / meinen Eltern']],
+    },
+    {
+      t: 'p',
+      text: 'A few masculine nouns also add **-n** in the singular:',
+    },
+    {
+      t: 'table',
+      caption: 'Maskuline Nomen im Dativ',
+      head: ['Nominativ', 'Dativ'],
+      rows: [
+        ['der Kunde', 'dem Kunden'],
+        ['der Kollege', 'dem Kollegen'],
+        ['der Herr', 'Herrn Schmitt'],
+      ],
     },
     {
       t: 'ex',
@@ -74,7 +109,7 @@ export const d17: Day = {
     { t: 'h', text: '3 · Präpositionen mit Dativ' },
     {
       t: 'p',
-      text: 'Nine prepositions are **always** followed by the dative, whatever the verb or the sentence is: **mit, bei, zu, nach, aus, von, seit, ab, gegenüber**. There is no logic to remember which preposition takes which case, so learn the nine as a set.',
+      text: 'In class you learned nine prepositions that take the **dative**, whatever the verb is: **mit, bei, zu, nach, aus, von, seit, ab, gegenüber** (“mit dem Bus, zur Schule, seit einem Jahr”).\n\n- There is no logic that tells you which case a preposition takes, so learn them as a set.\n- Many grammar books also put **außer** (except) in this set.',
     },
     {
       t: 'preps',
@@ -82,7 +117,7 @@ export const d17: Day = {
         { word: 'mit', icon: 'users', use: 'together with someone; by (a vehicle)', de: 'Ich esse Pizza mit meinen Freunden.', en: 'I eat pizza with my friends.' },
         { word: 'bei', icon: 'briefcase', use: 'at someone’s place or workplace; at a company', de: 'Ich arbeite bei einer großen Firma.', en: 'I work at a large company.' },
         { word: 'zu', icon: 'arrow', use: 'to a place or a person (not to a city)', de: 'Ich gehe zum Arzt.', en: 'I am going to the doctor.' },
-        { word: 'nach', icon: 'map', use: 'to a city, a state or a country; also “after”', de: 'Ich fahre nach Chandigarh.', en: 'I am travelling to Chandigarh.' },
+        { word: 'nach', icon: 'map', use: 'to a city or a country without an article; also “after”', de: 'Ich fahre nach Chandigarh.', en: 'I am travelling to Chandigarh.' },
         { word: 'aus', icon: 'home', use: 'out of a place; coming from a city or country', de: 'Er kommt aus dem Flughafen.', en: 'He is coming out of the airport.' },
         { word: 'von', icon: 'arrow', use: 'from a person or a place; of', de: 'Wir kommen vom Kino.', en: 'We are coming from the cinema.' },
         { word: 'seit', icon: 'clock', use: 'since, for (from a time until now)', de: 'Ich wohne seit drei Jahren in Delhi.', en: 'I have lived in Delhi for three years.' },
@@ -93,23 +128,48 @@ export const d17: Day = {
     {
       t: 'rule',
       title: 'Regel — mit or bei? zu or nach? aus or von?',
-      body: '**mit** = **together with** a person, or **by means of** something (*mit dem Bus*). **bei** = **at** someone’s home or workplace (*bei meinen Eltern wohnen, bei Siemens arbeiten*). **zu** = to a **place or person** (*zur Bäckerei, zum Arzt, zu meiner Oma*); **nach** = to a **city, state or country** (*nach Berlin, nach Indien*). Two pairs go together: **nach Hause** (going home) and **zu Hause** (at home). **aus** = **out of** a place or **from** a city or country; **von** = **from** a person or from a place you went **zu**. Contractions: **zu + dem = zum**, **zu + der = zur**, **bei + dem = beim**, **von + dem = vom**.',
+      body: 'How to tell the easily confused prepositions apart:\n\n- **mit** = together with a person, or by means of something\n- **bei** = at someone’s home, workplace or practice\n- **zu** = to a place or person\n- **nach** = to a city or country; a country with an article takes **in** instead\n- fixed pair: **nach Hause** (going home) and **zu Hause** (at home)\n- **aus** = out of a place, or from a city or country\n- **von** = from a person, or from a place you went **zu**\n- for **Wo?** (where you are) **in** also takes the dative',
     },
     {
       t: 'table',
-      caption: 'Wohin? und Woher?',
-      head: ['Wohin?', 'Woher?'],
+      caption: 'Beispiele zu mit, bei, zu, nach, in',
+      head: ['Präposition', 'Beispiele'],
       rows: [
-        ['Ich gehe zum Arzt.', 'Ich komme vom Arzt.'],
-        ['Ich gehe zur Schule.', 'Ich komme von der Schule.'],
-        ['Ich gehe in den Supermarkt.', 'Ich komme aus dem Supermarkt.'],
-        ['Ich fahre nach Berlin.', 'Ich komme aus Berlin.'],
+        ['mit', 'mit dem Bus'],
+        ['bei', 'bei meinen Eltern wohnen · bei Siemens arbeiten · beim Arzt sein'],
+        ['zu', 'zur Bäckerei · zum Arzt · zu meiner Oma'],
+        ['nach', 'nach Berlin · nach Indien'],
+        ['in (a country with an article)', 'in die Schweiz'],
+        ['in (Wo?)', 'Er ist im Haus. · Sie ist in der Bank.'],
+      ],
+    },
+    {
+      t: 'table',
+      caption: 'Verschmelzungen: Präposition + Artikel',
+      head: ['Präposition + Artikel', 'Kurzform'],
+      rows: [
+        ['zu + dem', 'zum'],
+        ['zu + der', 'zur'],
+        ['bei + dem', 'beim'],
+        ['von + dem', 'vom'],
+        ['in + dem', 'im'],
+      ],
+    },
+    {
+      t: 'table',
+      caption: 'Wohin? Wo? Woher?',
+      head: ['Wohin?', 'Wo?', 'Woher?'],
+      rows: [
+        ['Ich gehe zum Arzt.', 'Ich bin beim Arzt.', 'Ich komme vom Arzt.'],
+        ['Ich gehe zur Schule.', 'Ich bin in der Schule.', 'Ich komme von der Schule.'],
+        ['Ich gehe in den Supermarkt.', 'Ich bin im Supermarkt.', 'Ich komme aus dem Supermarkt.'],
+        ['Ich fahre nach Berlin.', 'Ich bin in Berlin.', 'Ich komme aus Berlin.'],
       ],
       say: [
-        'Ich gehe zum Arzt. Ich komme vom Arzt.',
-        'Ich gehe zur Schule. Ich komme von der Schule.',
-        'Ich gehe in den Supermarkt. Ich komme aus dem Supermarkt.',
-        'Ich fahre nach Berlin. Ich komme aus Berlin.',
+        'Ich gehe zum Arzt. Ich bin beim Arzt. Ich komme vom Arzt.',
+        'Ich gehe zur Schule. Ich bin in der Schule. Ich komme von der Schule.',
+        'Ich gehe in den Supermarkt. Ich bin im Supermarkt. Ich komme aus dem Supermarkt.',
+        'Ich fahre nach Berlin. Ich bin in Berlin. Ich komme aus Berlin.',
       ],
     },
     {
@@ -118,7 +178,7 @@ export const d17: Day = {
         { de: 'Ich fahre mit dem Auto.', hi: 'I am going by car.' },
         { de: 'Ich gehe mit meiner Freundin ins Kino.', hi: 'I am going to the cinema with my girlfriend.' },
         { de: 'Ich wohne bei meinen Eltern.', hi: 'I live with my parents.' },
-        { de: 'Sie kommt von der Chefin.', hi: 'She is coming from the boss’s office.' },
+        { de: 'Sie kommt von der Chefin.', hi: 'She is coming from the boss.' },
         { de: 'Ich komme aus dem Haus.', hi: 'I am coming out of the house.' },
         { de: 'Ich gehe zur Bäckerei.', hi: 'I am going to the bakery.' },
         { de: 'Ich lerne seit zwei Monaten Deutsch.', hi: 'I have been learning German for two months.' },
@@ -129,7 +189,11 @@ export const d17: Day = {
     },
     {
       t: 'warn',
-      text: '**seit** is used with the **present tense** in German: **Ich wohne seit drei Jahren in Delhi** (English says “have lived”; German says “live”). **ab** needs a **point in time** right after it: **Ab Montag bin ich frei.** With a date: **ab dem 21. Oktober** (spoken: *ab dem einundzwanzigsten Oktober*). **Bücherei** is a public **library**; a bookshop is a **Buchhandlung**.',
+      text: '- **seit** is used with the **present tense** in German: “Ich wohne seit drei Jahren in Delhi” (English says “have lived”; German says “live”)\n- **ab** (from … on) in this lesson is followed by a **point in time**: “Ab Montag bin ich frei.”\n- with a date: **ab dem 21. Oktober** (spoken: “ab dem einundzwanzigsten Oktober”)',
+    },
+    {
+      t: 'tip',
+      text: '**Bücherei** is a **library** (like **Bibliothek**); a bookshop is a **Buchhandlung**.',
     },
     {
       t: 'compare',
@@ -145,7 +209,11 @@ export const d17: Day = {
     {
       t: 'rule',
       title: 'Strategie — take notes, not sentences',
-      body: 'In the listening exercises the audio is played **twice** and you fill in a **note sheet** (**Notizblatt**) or tick the right answer. Read the gaps first, then write **only key words**: names, **spelled** words, numbers, times. In class a voicemail was spelled out letter by letter: *L-E-I-B-N-I-Z-Gasse*. Write what you hear, then check the second time.',
+      body: 'In the class task you heard a voicemail **twice** and wrote the key facts on a **note sheet** (**Notizblatt**).\n\n- read the gaps first\n- write **only key words**: names, **spelled** words, numbers, times\n- in class a street name was spelled out letter by letter: “L-E-I-B-N-I-Z-Gasse”\n- write what you hear, then check the second time',
+    },
+    {
+      t: 'tip',
+      text: 'In the Goethe A1 **Hören** you do not fill a note sheet:\n\n- you tick **a, b, c** (Teil 1 and 3, heard twice)\n- or **richtig / falsch** (Teil 2, heard **once**)\n\nBut jotting down numbers and times while you listen helps there too.',
     },
     {
       t: 'table',
@@ -170,7 +238,7 @@ export const d17: Day = {
     },
     {
       t: 'tip',
-      text: 'The note sheet shows what you would write after hearing a message like this one, summarised from the class audio (a voicemail from Tatjana to Anke about a birthday party). Listen for the question word in each gap (**wer, wann, wo, was**) and write only that piece of information. A telephone number in a message is noted digit by digit.',
+      text: 'The note sheet shows what you would write after hearing a message like this one, summarised from the class audio (a voicemail from Tatjana to Anke about a birthday party).\n\n- listen for the question word in each gap (**wer, wann, wo, was**) and write only that piece of information\n- telephone numbers are often read digit by digit, sometimes in pairs: “einundsechzig” is written **61** (the second digit is spoken first)',
     },
     {
       t: 'sticky',
@@ -191,7 +259,7 @@ export const d17: Day = {
     { de: 'der Hut', hi: 'टोपी', en: 'hat', type: 'noun', gender: 'm', pl: 'die Hüte', ex: 'Der Hut ist neu.', exHi: 'The hat is new.' },
     { de: 'der Mann', hi: 'आदमी, पति', en: 'man, husband', type: 'noun', gender: 'm', pl: 'die Männer', ex: 'Ich helfe dem Mann.', exHi: 'I am helping the man.' },
     { de: 'die Leute', hi: 'लोग', en: 'people', type: 'noun', gender: 'pl', pl: 'die Leute', ex: 'Ich helfe den Leuten.', exHi: 'I am helping the people.' },
-    { de: 'das Spielzeug', hi: 'खिलौना', en: 'toy', type: 'noun', gender: 'n', ex: 'Das Spielzeug gehört dem Kind.', exHi: 'The toy belongs to the child.' },
+    { de: 'das Spielzeug', hi: 'खिलौना', en: 'toy', type: 'noun', gender: 'n', pl: 'die Spielzeuge', ex: 'Das Spielzeug gehört dem Kind.', exHi: 'The toy belongs to the child.' },
     { de: 'die Bücherei', hi: 'पुस्तकालय', en: 'library (public)', type: 'noun', gender: 'f', pl: 'die Büchereien', ex: 'Gegenüber dem Markt liegt eine Bücherei.', exHi: 'Opposite the market there is a library.' },
     { de: 'die Arbeitszeit', hi: 'काम के घंटे', en: 'working hours', type: 'noun', gender: 'f', pl: 'die Arbeitszeiten', ex: 'Die Arbeitszeit ist bis 16 Uhr.', exHi: 'The working hours are until 4 pm.' },
     { de: 'der Kunde', hi: 'ग्राहक', en: 'customer, client (male)', type: 'noun', gender: 'm', pl: 'die Kunden', ex: 'Die Firma von dem Kunden ist nicht im Zentrum.', exHi: 'The customer’s company is not in the centre.' },
@@ -229,11 +297,11 @@ export const d17: Day = {
     { k: 'mcq', q: 'Which of these verbs takes the dative?', options: ['helfen', 'kaufen', 'essen', 'brauchen'], a: 0, why: 'helfen takes the dative: Ich helfe dem Mann.' },
     { k: 'mcq', q: 'Which question asks for the dative object?', options: ['Wem?', 'Wen?', 'Was?', 'Wo?'], a: 0, why: 'Wem? = to whom? (dative). Wen? is the accusative.' },
     { k: 'fill', q: 'Ich helfe ___ Mann.  (ein)', a: ['einem'], why: 'masculine dative: einem.' },
-    { k: 'fill', q: 'Das Haus gehört sein___ Schwester.  (seine, dative)', a: ['seiner'], why: 'feminine dative: seiner.' },
+    { k: 'fill', q: 'Das Haus gehört ___ Schwester.  (sein-, his)', a: ['seiner'], why: 'feminine dative: seiner.' },
     { k: 'fill', q: 'Das Spielzeug gehört ___ Kind.  (das Kind, the)', a: ['dem'], why: 'neuter dative: dem.' },
-    { k: 'fill', q: 'Das Spielzeug gehört unser___ Kind.  (dative)', a: ['unserem'], why: 'das Kind is neuter: unserem.' },
+    { k: 'fill', q: 'Das Spielzeug gehört ___ Kind.  (unser-, our)', a: ['unserem'], why: 'das Kind is neuter: unserem.' },
     { k: 'fill', q: 'Ich helfe ___ Kindern.  (die Kinder, the)', a: ['den'], why: 'dative plural: den + noun with -n.' },
-    { k: 'fill', q: 'Max hilft sein___ Großmutter.  (dative)', a: ['seiner'], why: 'die Großmutter is feminine: seiner.' },
+    { k: 'fill', q: 'Max hilft ___ Großmutter.  (sein-, his)', a: ['seiner'], why: 'die Großmutter is feminine: seiner.' },
     { k: 'fill', q: 'Der Hut passt ___ Verkäufer.  (der Verkäufer, the)', a: ['dem'], why: 'masculine dative: dem.' },
     { k: 'mcq', q: 'What is the dative plural of “die Freunde”?', options: ['den Freunden', 'den Freunde', 'die Freunden', 'der Freunde'], a: 0, why: 'den + noun with -n: den Freunden.' },
     { k: 'mcq', q: 'What is the dative plural of “die Autos”?', options: ['den Autos', 'den Autosen', 'den Autoen', 'die Autos'], a: 0, why: 'A plural ending in -s adds no further -n.' },
@@ -246,8 +314,9 @@ export const d17: Day = {
     { k: 'fill', q: 'Ich fahre ___ Chandigarh.  (to a city)', a: ['nach'], why: 'A city takes nach.' },
     { k: 'fill', q: 'Er kommt ___ dem Flughafen.  (out of)', a: ['aus'], why: 'aus + dative: out of a place.' },
     { k: 'fill', q: 'Wir kommen ___ Kino.  (von + dem)', a: ['vom'], why: 'von + dem = vom.' },
+    { k: 'fill', q: 'Ich bin heute ___ Büro.  (in + dem, Wo?)', a: ['im'], why: 'Wo? in + dative: in + dem = im.' },
     { k: 'fill', q: 'Ich lerne ___ drei Monaten Deutsch.  (for)', a: ['seit'], why: 'seit + dative, with the present tense.' },
-    { k: 'fill', q: '___ Montag habe ich Urlaub.  (from … on)', a: ['Ab'], why: 'ab + a point in time.' },
+    { k: 'fill', q: '___ Montag habe ich Urlaub.  (from … on)', a: ['Ab', 'ab'], why: 'ab + a point in time.' },
     { k: 'fill', q: 'Ich wohne ___ der Schule.  (opposite)', a: ['gegenüber'], why: 'gegenüber + dative.' },
     { k: 'fill', q: 'Ich gehe nach ___.  (going home)', a: ['Hause'], why: 'nach Hause = going home; zu Hause = at home.' },
     { k: 'mcq', q: 'Which sentence is about being AT home?', options: ['Ich bin zu Hause.', 'Ich bin nach Hause.', 'Ich bin nach Haus.', 'Ich bin in Hause.'], a: 0, why: 'zu Hause = at home.' },
@@ -264,13 +333,13 @@ export const d17: Day = {
     { k: 'artikel', noun: 'Zentrum', a: 'das', why: 'das Zentrum — neuter. Plural: die Zentren.' },
     { k: 'artikel', noun: 'Bücherei', a: 'die', why: 'die Bücherei — feminine, like die Bäckerei.' },
     { k: 'artikel', noun: 'Arbeitszeit', a: 'die', why: 'die Arbeitszeit — feminine, like die Zeit.' },
-    { k: 'mcq', q: 'Hören (Dialog Laura): Worüber fragt Laura NICHT?', options: ['über das Abendessen', 'über einen freien Tag', 'über die Arbeitszeit', 'über ihren Geburtstag'], a: 0, why: 'Laura asks about time off, working hours, the customer visit and her birthday, not about dinner.' },
+    { k: 'mcq', q: 'Hören (Dialog Laura): Worüber spricht Laura NICHT?', options: ['über das Abendessen', 'über einen freien Tag', 'über die Arbeitszeit', 'über ihren Geburtstag'], a: 0, why: 'Laura asks about time off, working hours, the customer visit and her birthday, not about dinner.' },
     { k: 'mcq', q: 'Hören (Dialog Laura): Wie fährt Laura zum Konzert nach Stuttgart?', options: ['mit dem Auto', 'mit dem Zug', 'mit dem Bus', 'mit dem Flugzeug'], a: 0, why: 'Wir fahren mit dem Auto und wollen dort übernachten.' },
     { k: 'mcq', q: 'Hören (Dialog Laura): Bis wann ist die Arbeitszeit eigentlich?', options: ['bis 16 Uhr', 'bis 15 Uhr', 'bis 17 Uhr', 'bis 14 Uhr'], a: 0, why: 'Die Arbeitszeit ist eigentlich bis 16 Uhr.' },
     { k: 'mcq', q: 'Hörtext: „Ich hatte heute schon drei Kaffee. Willst du vielleicht einen Tee? Oder warte, hier ist auch noch Saft.“ — „Ich nehme gern einen Tee mit Zucker bitte.“ Was nimmt die Person?', options: ['Tee mit Zucker', 'Kaffee', 'Saft', 'Tee ohne Zucker'], a: 0, why: 'Ich nehme gern einen Tee mit Zucker.' },
     { k: 'mcq', q: 'Hörtext: „Ich gehe heute noch ins Kino.“ — „Allein?“ — „Nein, mit Anna. Sie ist eine Freundin.“ Mit wem geht die Person ins Kino?', options: ['mit einer Freundin', 'mit einer Kollegin', 'allein', 'mit der Schwester'], a: 0, why: 'Mit Anna; sie ist eine Freundin, keine Kollegin.' },
-    { k: 'mcq', q: 'Hörtext: „Wie findest du dein Praktikum?“ — „Super! Es ist sehr interessant und die Kollegen sind so nett.“ Was gefällt Valentin?', options: ['die Kollegen', 'die Gespräche mit Kunden', 'früh aufstehen', 'der Kaffee'], a: 0, why: 'Die Kollegen sind nett; Gespräche mit Kunden sind noch schwer, und früh aufstehen ist nicht toll.' },
+    { k: 'mcq', q: 'Hörtext: „Wie findest du dein Praktikum?“ — „Super! Es ist sehr interessant und die Kollegen sind so nett.“ Was gefällt Valentin?', options: ['die Kollegen', 'die Gespräche mit Kunden', 'früh aufstehen'], a: 0, why: 'Die Kollegen sind nett; Gespräche mit Kunden sind noch schwer, und früh aufstehen ist nicht toll.' },
   ],
   examTip:
-    'In Hören the texts are played twice: use the first time to catch the answer, the second to check spelling and numbers. For the dative, remember the short formula for article endings (dem for m and n, der for f, den + n for plural); an exam sentence with mit, bei or zu followed by an accusative article stands out as a mistake.',
+    'In Goethe A1 Hören, Teil 1 and Teil 3 are played twice but Teil 2 only once, so read the task before each text. When a text is played twice, use the first time to find the answer and the second to check numbers and times. For the dative, remember the short formula for article endings (dem for m and n, der for f, den + n for plural); when you write in Schreiben, check that the article after mit, bei, zu, aus, von or nach is dative.',
 }

@@ -1,0 +1,10 @@
+{
+  "d11-hero": {
+    "ratio": "16:9",
+    "prompt": "A relaxed summer grill party in a small green garden: a long wooden table with bowls of salad, bread and sausages on a grill, three friends passing a plate and laughing, warm evening light, string lights in the trees."
+  },
+  "d11-restaurant": {
+    "ratio": "16:9",
+    "prompt": "A waiter in a dark waistcoat presenting the menu card to two guests seated at a restaurant table, wine glasses and plates on the table, hanging lamp, big plants, blank menu with no writing, rectangular full-bleed scene, nothing in the corners, no watermark, no text."
+  }
+}

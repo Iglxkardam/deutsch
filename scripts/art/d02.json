@@ -1,0 +1,10 @@
+{
+  "d02-hero": {
+    "ratio": "16:9",
+    "prompt": "A bright office lobby with a glass entrance: in the foreground two adults in smart clothes shake hands politely as they meet for the first time, while in the background near a small coffee corner two young friends laugh together casually, warm morning light, no signs and no writing anywhere."
+  },
+  "d02-spell": {
+    "ratio": "16:9",
+    "prompt": "A friendly hotel reception desk seen from the guest side: a receptionist holding a clipboard and a pen, a guest leaning on the counter with a suitcase, a small brass bell and a potted plant on the desk, soft afternoon light, no text, no letters, no numbers."
+  }
+}

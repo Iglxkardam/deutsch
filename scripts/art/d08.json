@@ -1,0 +1,14 @@
+{
+  "d08-hero": {
+    "ratio": "16:9",
+    "prompt": "A calm view of a big northern European harbour at golden hour: tall container cranes, a small ferry on still water, red-brick warehouses along the quay, and in the distance a slender church tower with a green copper roof rising above the city rooftops."
+  },
+  "d08-see": {
+    "ratio": "16:9",
+    "prompt": "A split landscape in one picture: on the left a small calm lake with a rowing boat, reeds and a wooden jetty; on the right the open sea with a large ship on the horizon, a lighthouse and a few seagulls; a soft sandy shoreline joins the two halves."
+  },
+  "d08-bahn": {
+    "ratio": "16:9",
+    "prompt": "A cutaway cross-section of a European city: a yellow tram on rails in a busy street at the top, a metro train in a tunnel beneath the street, and a commuter train leaving along an elevated track toward small suburban houses and green fields on the far side."
+  }
+}

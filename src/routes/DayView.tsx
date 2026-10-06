@@ -5,9 +5,10 @@ import { dayById, isReady, planFor, weekOf } from '@/data/curriculum'
 import { useStore } from '@/lib/store'
 import { NoteRenderer } from '@/components/notes/NoteRenderer'
 import { RichHero, RichNotes } from '@/components/notes/RichNotes'
+import { DialogueView } from '@/components/DialogueView'
 import { VocabCard } from '@/components/vocab/VocabCard'
 import { Quiz } from '@/components/games/Quiz'
-import { Segmented, Pill, SpeakButton, Empty, ProgressRing } from '@/components/ui'
+import { Segmented, Pill, Empty, ProgressRing } from '@/components/ui'
 import { generateImage, scenePrompt } from '@/lib/image'
 import { speak, prewarm } from '@/lib/audio'
 import { Gloss } from '@/components/Gloss'
@@ -174,59 +175,7 @@ export default function DayView() {
           )}
 
           {/* ── DIALOG ── */}
-          {tab === 'dialog' && day.dialogue && (
-            <div className="card card-pad col" style={{ gap: 'var(--s4)' }}>
-              <div className="between wrap" style={{ gap: 'var(--s3)' }}>
-                <div className="col" style={{ gap: 2 }}>
-                  <h2 className="h3"><Gloss strict>{day.dialogue.title}</Gloss></h2>
-                  <span className="small muted">{day.dialogue.situation}</span>
-                </div>
-                <button
-                  className="btn btn-sm"
-                  onClick={() => speak(day.dialogue!.lines.map((l) => l.de).join(' … '), 0.95)}
-                >
-                  ▶ Play whole dialogue
-                </button>
-              </div>
-
-              <div className="col" style={{ gap: 10 }}>
-                {day.dialogue.lines.map((l, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, x: i % 2 ? 14 : -14 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.35, delay: i * 0.05 }}
-                    className="row"
-                    style={{
-                      alignItems: 'flex-start',
-                      gap: 12,
-                      padding: '12px 14px',
-                      borderRadius: 'var(--r-md)',
-                      background: i % 2 ? 'var(--paper-2)' : 'transparent',
-                      border: '1px solid var(--line)',
-                    }}
-                  >
-                    <span
-                      className="tiny"
-                      style={{
-                        flex: 'none', width: 76, fontWeight: 750,
-                        color: i % 2 ? 'var(--purple)' : 'var(--blue)',
-                        paddingTop: 2,
-                      }}
-                    >
-                      {l.who}
-                    </span>
-                    <div className="grow">
-                      <div className="serif" style={{ fontSize: 16.5, fontWeight: 550 }}><Gloss>{l.de}</Gloss></div>
-                      <div className="tiny dim" style={{ marginTop: 2 }}>{l.hi}</div>
-                    </div>
-                    <SpeakButton text={l.de} />
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          )}
+          {tab === 'dialog' && day.dialogue && <DialogueView dialogue={day.dialogue} />}
 
           {/* ── QUIZ ── */}
           {tab === 'quiz' && (

@@ -1,0 +1,10 @@
+{
+  "d03-hero": {
+    "ratio": "16:9",
+    "prompt": "Four friendly students of different backgrounds sitting around a café table in a bright classroom-like room, a large world map without any writing on the wall behind them, a small globe and notebooks on the table, warm morning light, relaxed and welcoming."
+  },
+  "d03-map": {
+    "ratio": "16:9",
+    "prompt": "A calm stylised landscape seen from above showing three neighbouring regions in soft different colours: a green region with a small harbour and a cathedral, a mountain region with snowy peaks and a lake, and a hilly region with a river; a few paper aeroplanes arrive from the right edge. No text, no letters, no numbers."
+  }
+}

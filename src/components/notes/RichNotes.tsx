@@ -20,6 +20,48 @@ function rich(text: string): ReactNode {
   )
 }
 
+
+/**
+ * Text with structure. Blank line = new paragraph. Lines starting with "- " = a bullet list
+ * (consecutive "- " lines form one list). Everything keeps the **bold** / hover handling of rich().
+ */
+function richText(text: string): ReactNode {
+  const out: ReactNode[] = []
+  let list: string[] = []
+  let para: string[] = []
+  const flushPara = () => {
+    if (para.length) out.push(<p key={`p${out.length}`}>{rich(para.join(' '))}</p>)
+    para = []
+  }
+  const flushList = () => {
+    if (list.length)
+      out.push(
+        <ul key={`u${out.length}`} className="rc-ul">
+          {list.map((li, i) => (
+            <li key={i}>{rich(li)}</li>
+          ))}
+        </ul>,
+      )
+    list = []
+  }
+  for (const raw of text.split('\n')) {
+    const line = raw.trim()
+    if (!line) {
+      flushPara()
+      flushList()
+    } else if (line.startsWith('- ')) {
+      flushPara()
+      list.push(line.slice(2))
+    } else {
+      flushList()
+      para.push(line)
+    }
+  }
+  flushPara()
+  flushList()
+  return out.length === 1 && !Array.isArray(out[0]) && (out[0] as { type?: string }).type === 'p' ? (out[0] as { props: { children: ReactNode } }).props.children : out
+}
+
 /** "Regel — the stem can grow an extra -e-" → label "Regel", title "the stem …" */
 function splitTitle(title: string): [string, string] {
   const i = title.indexOf(' — ')
@@ -29,7 +71,7 @@ function splitTitle(title: string): [string, string] {
 function Block({ b }: { b: NoteBlock }) {
   switch (b.t) {
     case 'p':
-      return <p className="rc-p">{rich(b.text)}</p>
+      return <div className="rc-p rc-rich">{richText(b.text)}</div>
 
     case 'rule': {
       const [label, title] = splitTitle(b.title)
@@ -41,7 +83,7 @@ function Block({ b }: { b: NoteBlock }) {
           <div className="rc-rule-title">
             <Gloss strict>{title}</Gloss>
           </div>
-          <div className="rc-rule-body">{rich(b.body)}</div>
+          <div className="rc-rule-body rc-rich">{richText(b.body)}</div>
         </div>
       )
     }
@@ -105,7 +147,7 @@ function Block({ b }: { b: NoteBlock }) {
           </span>
           <div>
             <div className="rc-call-label">{b.t === 'tip' ? 'Tip' : 'Watch out'}</div>
-            <div className="rc-call-body">{rich(b.text)}</div>
+            <div className="rc-call-body rc-rich">{richText(b.text)}</div>
           </div>
         </div>
       )
