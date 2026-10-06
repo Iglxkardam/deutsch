@@ -11,6 +11,11 @@ import { d09 } from './days/d09'
 import { d10 } from './days/d10'
 import { d11 } from './days/d11'
 import { d12 } from './days/d12'
+import { d13 } from './days/d13'
+import { d14 } from './days/d14'
+import { d15 } from './days/d15'
+import { d16 } from './days/d16'
+import { d17 } from './days/d17'
 import { DOMAIN_VOCAB } from './domain'
 
 /** Robotics / AI / Ausbildung words — a separate set, not part of the 30-day course. */
@@ -21,7 +26,7 @@ export { DOMAIN_VOCAB }
  * to this array — weeks, vocabulary, games, stats and routing all derive from
  * here automatically.
  */
-export const DAYS: Day[] = [d01, d02, d03, d04, d05, d06, d07, d08, d09, d10, d11, d12]
+export const DAYS: Day[] = [d01, d02, d03, d04, d05, d06, d07, d08, d09, d10, d11, d12, d13, d14, d15, d16, d17]
 
 export const TOTAL_DAYS = 30
 
@@ -58,13 +63,12 @@ export const PLANNED: Record<number, { title: string; focus: string; kapitel: nu
   // Days 9–12 covered kein/nicht, Wegbeschreibung, food & shopping, the accusative,
   // möchten/mögen, and Uhrzeit in whatever order the actual classes moved at —
   // faster than this roadmap first guessed. 13 onward is still genuinely ahead.
-  17: { kapitel: 5,  title: 'Modal verbs', focus: 'müssen, können, wollen · the sentence bracket' },
-  18: { kapitel: 6,  title: 'Dates and birthdays', focus: 'Ordinal numbers · am 3. Mai · invitations' },
-  19: { kapitel: 6,  title: 'Separable verbs', focus: 'aufstehen, einkaufen, anfangen · free-time activities' },
-  20: { kapitel: 6,  title: 'Ordering and talking about the past', focus: 'Accusative pronouns · für + accusative · war and hatte' },
+  // Days 13–17 (from the recordings of 28.09–05.10) taught war/hatte, dates and ordinals, separable verbs,
+  // modal verbs with them, ja/nein/doch, und/oder/aber, and the dative; the roadmap entries they replace
+  // (old 17 modal verbs, 18 dates, 19 separable verbs, 22 dative article, 23 dative prepositions) are removed.
+  // The remaining numbers were deliberately NOT renumbered — that is a product decision.
+  20: { kapitel: 6,  title: 'Ordering, paying and accusative pronouns', focus: 'Accusative pronouns (mich, dich …) · für + accusative · ordering and paying' },
   21: { kapitel: 6,  title: 'Plattform 2 — review of chapters 4–6', focus: 'Consolidation + listening and reading practice' },
-  22: { kapitel: 7,  title: 'A day at work', focus: 'Office vocabulary · the dative article · mit + dative' },
-  23: { kapitel: 7,  title: 'Saying where things are', focus: 'Prepositions with the dative · joining sentences with und, oder, aber' },
   24: { kapitel: 8,  title: 'The body and being ill', focus: 'Body parts · illnesses · imperative with du, ihr and Sie' },
   25: { kapitel: 8,  title: 'At the doctor', focus: 'Modal verbs sollen, dürfen · giving and understanding instructions' },
   26: { kapitel: 9,  title: 'My flat', focus: 'Rooms · furniture · colours · describing a home' },

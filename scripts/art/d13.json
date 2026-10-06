@@ -1,0 +1,10 @@
+{
+  "d13-hero": {
+    "ratio": "16:9",
+    "prompt": "A friendly doctor's reception desk in a bright small clinic: a receptionist with a headset phone, a wall calendar with a few days circled, a potted plant, warm morning light, calm and tidy."
+  },
+  "d13-freizeit": {
+    "ratio": "16:9",
+    "prompt": "Friends enjoying free time in a green park on a sunny day: two people hiking with backpacks on a path toward hills, one cycling, a small group grilling at a picnic table, relaxed and cheerful, wide landscape."
+  }
+}
